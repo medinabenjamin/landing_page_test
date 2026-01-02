@@ -1,10 +1,11 @@
+import Reveal from "@/components/motion/Reveal";
 import { siteConfig } from "@/content/site";
 
 export default function Contact() {
   return (
     <section id="contacto" className="bg-white">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <div className="grid gap-10 md:grid-cols-[1.2fr,1fr]">
+        <Reveal className="grid gap-10 md:grid-cols-[1.2fr,1fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-600">
               Contacto
@@ -13,7 +14,7 @@ export default function Contact() {
               Coordinemos una conversación estratégica
             </h2>
             <p className="mt-3 text-slate-600">{siteConfig.cta}</p>
-            <div className="mt-6 rounded-2xl bg-brand-100 p-6 text-brand-900">
+            <div className="mt-6 rounded-2xl bg-brand-100 p-6 text-brand-900 shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-md">
               <p className="text-sm uppercase tracking-[0.3em]">
                 Email directo
               </p>
@@ -22,7 +23,7 @@ export default function Contact() {
               </p>
             </div>
           </div>
-          <form className="space-y-4 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <form className="space-y-4 rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-md">
             <div>
               <label className="text-sm font-medium text-slate-700" htmlFor="name">
                 Nombre y apellido
@@ -32,7 +33,7 @@ export default function Contact() {
                 name="name"
                 type="text"
                 placeholder="Tu nombre"
-                className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm transition focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100"
               />
             </div>
             <div>
@@ -44,7 +45,7 @@ export default function Contact() {
                 name="email"
                 type="email"
                 placeholder="tu@email.com"
-                className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm transition focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100"
               />
             </div>
             <div>
@@ -56,12 +57,12 @@ export default function Contact() {
                 name="message"
                 rows={4}
                 placeholder="Contanos sobre tu proyecto"
-                className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm transition focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100"
               />
             </div>
             <button
               type="button"
-              className="w-full rounded-full bg-brand-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-900"
+              className="w-full rounded-full bg-brand-600 px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-out hover:bg-brand-900"
             >
               Enviar consulta
             </button>
@@ -69,7 +70,7 @@ export default function Contact() {
               Formulario sin envío real por el momento.
             </p>
           </form>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

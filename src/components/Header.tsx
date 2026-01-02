@@ -19,7 +19,7 @@ export default function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="transition hover:text-brand-600"
+              className="transition duration-300 ease-out hover:text-brand-600 focus-visible:text-brand-600 focus-visible:outline-none active:text-brand-900"
             >
               {item.label}
             </a>
@@ -27,7 +27,7 @@ export default function Header() {
         </nav>
         <a
           href="#contacto"
-          className="rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-900"
+          className="rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition duration-300 ease-out hover:bg-brand-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-100 focus-visible:ring-offset-2"
         >
           Agendar llamada
         </a>
