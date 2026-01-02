@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 
 type RevealProps = {
@@ -8,22 +8,43 @@ type RevealProps = {
   className?: string;
   delay?: number;
   once?: boolean;
+  sectionId?: string;
 };
 
 export default function Reveal({
   children,
   className,
   delay = 0,
-  once = true
+  once = false,
+  sectionId
 }: RevealProps) {
   const reduceMotion = useReducedMotion();
+  const [resetKey, setResetKey] = useState(0);
+
+  useEffect(() => {
+    if (!sectionId) return;
+
+    const handleReveal = (event: Event) => {
+      const detail = (event as CustomEvent<{ sectionId?: string }>).detail;
+
+      if (detail?.sectionId === sectionId) {
+        setResetKey((prev) => prev + 1);
+      }
+    };
+
+    window.addEventListener("section:reveal", handleReveal);
+    return () => window.removeEventListener("section:reveal", handleReveal);
+  }, [sectionId]);
+
+  const motionKey = sectionId ? `${sectionId}-${resetKey}` : undefined;
 
   return (
     <motion.div
+      key={motionKey}
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once, amount: 0.3 }}
+      viewport={{ once, amount: 0.2 }}
       variants={{
         hidden: { opacity: 0, y: reduceMotion ? 0 : 12 },
         visible: {

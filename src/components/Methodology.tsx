@@ -4,9 +4,16 @@ import { siteConfig } from "@/content/site";
 
 export default function Methodology() {
   return (
-    <section id="metodologia" className="bg-white">
+    <section
+      id="metodologia"
+      data-section="metodologia"
+      className="scroll-mt-24 bg-white"
+    >
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <Reveal className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+        <Reveal
+          className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between"
+          sectionId="metodologia"
+        >
           <div className="max-w-xl">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-600">
               Metodología
@@ -27,7 +34,11 @@ export default function Methodology() {
             </p>
           </div>
         </Reveal>
-        <Stagger as="ol" className="mt-12 grid gap-6 md:grid-cols-2">
+        <Stagger
+          as="ol"
+          className="mt-12 grid gap-6 md:grid-cols-2"
+          sectionId="metodologia"
+        >
           {siteConfig.methodologySteps.map((step, index) => (
             <StaggerItem
               as="li"

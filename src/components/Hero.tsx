@@ -4,9 +4,17 @@ import { siteConfig } from "@/content/site";
 
 export default function Hero() {
   return (
-    <section id="hero" className="bg-brand-900 text-white">
+    <section
+      id="hero"
+      data-section="hero"
+      className="scroll-mt-24 bg-brand-900 text-white"
+    >
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-20 md:flex-row md:items-center md:justify-between">
-        <Stagger className="max-w-xl space-y-6" delayChildren={0.05}>
+        <Stagger
+          className="max-w-xl space-y-6"
+          delayChildren={0.05}
+          sectionId="hero"
+        >
           <StaggerItem>
             <p className="text-sm uppercase tracking-[0.3em] text-brand-100">
               Consultoría estratégica
@@ -39,7 +47,10 @@ export default function Hero() {
             </div>
           </StaggerItem>
         </Stagger>
-        <Reveal className="rounded-3xl bg-white/10 p-8 shadow-lg">
+        <Reveal
+          className="rounded-3xl bg-white/10 p-8 shadow-lg"
+          sectionId="hero"
+        >
           <div className="space-y-3 text-sm text-brand-100">
             <p className="text-base font-semibold text-white">Enfoque integral</p>
             <ul className="space-y-2">

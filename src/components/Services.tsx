@@ -4,9 +4,13 @@ import { siteConfig } from "@/content/site";
 
 export default function Services() {
   return (
-    <section id="servicios" className="bg-slate-50">
+    <section
+      id="servicios"
+      data-section="servicios"
+      className="scroll-mt-24 bg-slate-50"
+    >
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <Reveal className="mb-10 max-w-2xl">
+        <Reveal className="mb-10 max-w-2xl" sectionId="servicios">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-600">
             Servicios
           </p>
@@ -18,7 +22,7 @@ export default function Services() {
             proyectar escenarios y tomar decisiones con información confiable.
           </p>
         </Reveal>
-        <Stagger className="grid gap-6 md:grid-cols-2">
+        <Stagger className="grid gap-6 md:grid-cols-2" sectionId="servicios">
           {siteConfig.services.map((service) => (
             <StaggerItem key={service}>
               <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-md">
