@@ -3,9 +3,16 @@ import { siteConfig } from "@/content/site";
 
 export default function Contact() {
   return (
-    <section id="contacto" className="bg-white">
+    <section
+      id="contacto"
+      data-section="contacto"
+      className="scroll-mt-24 bg-white"
+    >
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <Reveal className="grid gap-10 md:grid-cols-[1.2fr,1fr]">
+        <Reveal
+          className="grid gap-10 md:grid-cols-[1.2fr,1fr]"
+          sectionId="contacto"
+        >
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-600">
               Contacto

@@ -3,8 +3,15 @@ import { siteConfig } from "@/content/site";
 
 export default function About() {
   return (
-    <section id="sobre-mi" className="bg-slate-900 text-white">
-      <Reveal className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-[2fr,1fr]">
+    <section
+      id="sobre-mi"
+      data-section="sobre-mi"
+      className="scroll-mt-24 bg-slate-900 text-white"
+    >
+      <Reveal
+        className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-[2fr,1fr]"
+        sectionId="sobre-mi"
+      >
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-100">
             Sobre mí

@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 
 type StaggerProps = {
@@ -10,6 +10,7 @@ type StaggerProps = {
   stagger?: number;
   once?: boolean;
   as?: "div" | "ol" | "ul";
+  sectionId?: string;
 };
 
 type StaggerItemProps = {
@@ -23,17 +24,37 @@ export function Stagger({
   className,
   delayChildren = 0,
   stagger = 0.12,
-  once = true,
-  as = "div"
+  once = false,
+  as = "div",
+  sectionId
 }: StaggerProps) {
   const MotionTag = as === "ol" ? motion.ol : as === "ul" ? motion.ul : motion.div;
+  const [resetKey, setResetKey] = useState(0);
+
+  useEffect(() => {
+    if (!sectionId) return;
+
+    const handleReveal = (event: Event) => {
+      const detail = (event as CustomEvent<{ sectionId?: string }>).detail;
+
+      if (detail?.sectionId === sectionId) {
+        setResetKey((prev) => prev + 1);
+      }
+    };
+
+    window.addEventListener("section:reveal", handleReveal);
+    return () => window.removeEventListener("section:reveal", handleReveal);
+  }, [sectionId]);
+
+  const motionKey = sectionId ? `${sectionId}-${resetKey}` : undefined;
 
   return (
     <MotionTag
+      key={motionKey}
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once, amount: 0.3 }}
+      viewport={{ once, amount: 0.2 }}
       variants={{
         hidden: {},
         visible: {
