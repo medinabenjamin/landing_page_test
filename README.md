@@ -33,3 +33,9 @@ npm run start
 - `src/content/` - Copy y constantes del sitio
 - `src/lib/` - Helpers/utilidades
 - `public/` - Assets estáticos
+
+## Animaciones
+La landing usa **Framer Motion** para micro-interacciones y animaciones al hacer scroll. Los wrappers reutilizables viven en:
+
+- `src/components/motion/Reveal.tsx`
+- `src/components/motion/Stagger.tsx`

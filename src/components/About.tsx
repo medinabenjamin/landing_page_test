@@ -1,9 +1,10 @@
+import Reveal from "@/components/motion/Reveal";
 import { siteConfig } from "@/content/site";
 
 export default function About() {
   return (
     <section id="sobre-mi" className="bg-slate-900 text-white">
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-[2fr,1fr]">
+      <Reveal className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-[2fr,1fr]">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-100">
             Sobre mí
@@ -13,7 +14,7 @@ export default function About() {
           </h2>
           <p className="mt-4 text-slate-200">{siteConfig.about}</p>
         </div>
-        <div className="rounded-2xl bg-white/10 p-6">
+        <div className="rounded-2xl bg-white/10 p-6 shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:bg-white/15">
           <p className="text-sm uppercase tracking-[0.3em] text-brand-100">
             Enfoque
           </p>
@@ -23,7 +24,7 @@ export default function About() {
             <li>• Acompañamiento continuo</li>
           </ul>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
