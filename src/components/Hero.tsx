@@ -1,13 +1,12 @@
 import Reveal from "@/components/motion/Reveal";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
-import { siteConfig } from "@/content/site";
 
 export default function Hero() {
   return (
     <section
       id="hero"
       data-section="hero"
-      className="scroll-mt-24 bg-brand text-base"
+      className="scroll-mt-24 bg-base text-brand"
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-20 md:flex-row md:items-center md:justify-between">
         <Stagger
@@ -16,49 +15,43 @@ export default function Hero() {
           sectionId="hero"
         >
           <StaggerItem>
-            <p className="text-sm uppercase tracking-[0.3em] text-support">
+            <p className="text-sm uppercase tracking-[0.3em] text-brand/70">
               Consultoría estratégica
             </p>
           </StaggerItem>
           <StaggerItem>
-            <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
-              {siteConfig.tagline}
+            <h1 className="text-4xl font-semibold leading-tight text-brand md:text-5xl">
+              Gestión Estratégica y Eficiencia Operativa para Empresas y
+              Organizaciones.
             </h1>
           </StaggerItem>
           <StaggerItem>
-            <p className="text-lg text-base/85">
-              {siteConfig.description}
+            <p className="text-lg text-brand/80">
+              Optimizamos recursos, estandarizamos procesos y fortalecemos la toma
+              de decisiones mediante sistemas de control de gestión.
             </p>
           </StaggerItem>
           <StaggerItem>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col items-start gap-3">
               <a
                 href="#contacto"
                 className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-brand shadow-sm transition duration-300 ease-out hover:bg-accent/90"
               >
-                {siteConfig.cta}
+                SOLICITAR DIAGNÓSTICO INICIAL
               </a>
-              <a
-                href="#servicios"
-                className="rounded-full border border-base/60 px-6 py-3 text-sm font-semibold text-base transition duration-300 ease-out hover:bg-base hover:text-brand"
-              >
-                Ver servicios
-              </a>
+              <p className="text-sm text-brand/70">
+                Análisis confidencial y contacto a la brevedad.
+              </p>
             </div>
           </StaggerItem>
         </Stagger>
         <Reveal
-          className="rounded-3xl bg-base/10 p-8 shadow-lg"
+          className="max-w-xs rounded-3xl border border-brand/10 bg-brand p-6 text-base shadow-lg"
           sectionId="hero"
         >
-          <div className="space-y-3 text-sm text-support">
-            <p className="text-base font-semibold text-base">Enfoque integral</p>
-            <ul className="space-y-2">
-              <li>• Organización y procesos claros</li>
-              <li>• Proyección financiera realista</li>
-              <li>• Tableros e indicadores accionables</li>
-            </ul>
-          </div>
+          <p className="text-base font-semibold text-white">
+            Conoce nuestros servicios
+          </p>
         </Reveal>
       </div>
     </section>
