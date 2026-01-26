@@ -7,7 +7,7 @@ export default function Hero() {
     <section
       id="hero"
       data-section="hero"
-      className="scroll-mt-24 bg-brand-900 text-white"
+      className="scroll-mt-24 bg-brand text-base"
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-20 md:flex-row md:items-center md:justify-between">
         <Stagger
@@ -16,7 +16,7 @@ export default function Hero() {
           sectionId="hero"
         >
           <StaggerItem>
-            <p className="text-sm uppercase tracking-[0.3em] text-brand-100">
+            <p className="text-sm uppercase tracking-[0.3em] text-support">
               Consultoría estratégica
             </p>
           </StaggerItem>
@@ -26,7 +26,7 @@ export default function Hero() {
             </h1>
           </StaggerItem>
           <StaggerItem>
-            <p className="text-lg text-slate-100/90">
+            <p className="text-lg text-base/85">
               {siteConfig.description}
             </p>
           </StaggerItem>
@@ -34,13 +34,13 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#contacto"
-                className="rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition duration-300 ease-out hover:bg-brand-100 hover:text-brand-900"
+                className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-brand shadow-sm transition duration-300 ease-out hover:bg-accent/90"
               >
                 {siteConfig.cta}
               </a>
               <a
                 href="#servicios"
-                className="rounded-full border border-brand-100/60 px-6 py-3 text-sm font-semibold text-brand-100 transition duration-300 ease-out hover:bg-brand-100 hover:text-brand-900"
+                className="rounded-full border border-base/60 px-6 py-3 text-sm font-semibold text-base transition duration-300 ease-out hover:bg-base hover:text-brand"
               >
                 Ver servicios
               </a>
@@ -48,11 +48,11 @@ export default function Hero() {
           </StaggerItem>
         </Stagger>
         <Reveal
-          className="rounded-3xl bg-white/10 p-8 shadow-lg"
+          className="rounded-3xl bg-base/10 p-8 shadow-lg"
           sectionId="hero"
         >
-          <div className="space-y-3 text-sm text-brand-100">
-            <p className="text-base font-semibold text-white">Enfoque integral</p>
+          <div className="space-y-3 text-sm text-support">
+            <p className="text-base font-semibold text-base">Enfoque integral</p>
             <ul className="space-y-2">
               <li>• Organización y procesos claros</li>
               <li>• Proyección financiera realista</li>
