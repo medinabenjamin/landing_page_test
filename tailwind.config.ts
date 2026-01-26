@@ -9,11 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          900: "#0b2f33",
-          600: "#1f7c87",
-          100: "#d5f2f6"
-        }
+        base: "#FAFAFA",
+        brand: "#0B5C5B",
+        accent: "#E4AF26",
+        support: "#B3E9CF"
       }
     }
   },
