@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Methodology from "@/components/Methodology";
-import Services from "@/components/Services";
+import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Services />
+        <ServicesSection />
         <Methodology />
         <About />
         <Contact />
