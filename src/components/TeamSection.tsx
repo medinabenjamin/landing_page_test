@@ -2,28 +2,28 @@ import Reveal from "@/components/motion/Reveal";
 
 const teamMembers = [
   {
-    name: "Daniela",
+    name: "Daniela Roa Concha",
     role: "CEO & Consultora Principal",
     description:
-      "Lidera la visión estratégica y acompaña a los clientes en la toma de decisiones clave."
+      "Fundadora de PROSIGO. Lidera la visión estratégica, alineando los objetivos directivos con la realidad operativa de las organizaciones para garantizar un crecimiento sostenible y rentabilidad."
   },
   {
-    name: "Carlos",
+    name: "Carlos Garrido Rosas",
     role: "Consultor de Gestión y Administración",
     description:
-      "Optimiza la gestión corporativa con foco en orden financiero y control operativo."
+      "Lidera el área de Administración Externa (BPO) asegurando el cumplimiento financiero y normativo de los clientes. Además, brinda soporte técnico clave en la planificación estratégica y evaluación de proyectos."
   },
   {
-    name: "Marcela",
+    name: "Marcela Salvo Muñoz",
     role: "Analista de Procesos y Estandarización",
     description:
-      "Diseña procesos claros y repetibles para sostener el crecimiento con eficiencia."
+      "Especialista en arquitectura de procesos. Se encarga del levantamiento, documentación y optimización de flujos de trabajo para asegurar la calidad, el orden y la continuidad operativa."
   },
   {
-    name: "Benjamín",
+    name: "Benjamín Medina",
     role: "Analista de Automatización",
     description:
-      "Impulsa la transformación digital con flujos automatizados y mejoras continuas."
+      "Encargado de la transformación digital de las operaciones. Implementa soluciones tecnológicas y automatizaciones para reducir tareas manuales, minimizar errores y agilizar la toma de decisiones."
   }
 ];
 
