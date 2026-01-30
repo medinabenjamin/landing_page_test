@@ -1,4 +1,3 @@
-import About from "@/components/About";
 import ClientsSection from "@/components/ClientsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -18,7 +17,6 @@ export default function Home() {
         <Methodology />
         <ClientsSection />
         <TeamSection />
-        <About />
         <ContactSection />
       </main>
       <Footer />
