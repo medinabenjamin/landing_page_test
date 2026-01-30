@@ -8,6 +8,7 @@ import { useScrollToSection } from "@/hooks/useScrollToSection";
 
 const navItems = [
   { label: "Servicios", href: "#servicios", id: "servicios" },
+  { label: "Quiénes Somos", href: "#equipo", id: "equipo" },
   { label: "Clientes y Proyectos", href: "#clientes", id: "clientes" },
   { label: "Contacto", href: "#contacto", id: "contacto" }
 ];
