@@ -40,7 +40,7 @@ export default function Header() {
             alt="Prosigo consultora estratégica"
             width={180}
             height={64}
-            className="h-12 w-auto"
+            className="h-12 w-auto rounded-xl"
             priority
           />
         </div>
