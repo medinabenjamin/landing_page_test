@@ -33,7 +33,7 @@ export default function Header() {
         isScrolled ? "shadow-[0_6px_18px_rgba(15,23,42,0.08)]" : "shadow-none"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <div className="flex items-center">
           <Image
             src="/prosigo-logo.svg"
