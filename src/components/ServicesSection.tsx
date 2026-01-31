@@ -12,8 +12,7 @@ const diagnosticItems = [
 const corporatePillars = [
   {
     title: "Dirección Corporativa y Control de Gestión",
-    focus:
-      "Transformamos la intuición en decisiones basadas en datos reales de toda la organización y objetivos claros.",
+    focus: "Dirección Corporativa y Control de Gestión.",
     bullets: [
       "Planificación Estratégica",
       "Evaluación de Proyectos",
@@ -22,12 +21,20 @@ const corporatePillars = [
   },
   {
     title: "Excelencia Operacional y Procesos",
-    focus:
-      "Preparamos tu estructura para soportar el crecimiento sin caos operativo.",
+    focus: "Excelencia Operacional y Procesos.",
     bullets: [
       "Estandarización de Procesos",
       "Automatización de Flujos",
       "Gestión del Cambio"
+    ]
+  },
+  {
+    title: "Gestión Financiera y Sostenibilidad",
+    focus: "Gestión Financiera y Sostenibilidad.",
+    bullets: [
+      "Optimización de Costos",
+      "Modelos de Presupuesto",
+      "Cumplimiento Tributario"
     ]
   }
 ];
@@ -95,12 +102,12 @@ export default function ServicesSection() {
           </div>
         </Reveal>
 
-        <Stagger className="grid gap-6 md:grid-cols-2" sectionId="servicios">
+        <Stagger className="grid gap-6 md:grid-cols-3" sectionId="servicios">
           {corporatePillars.map((pillar) => (
             <StaggerItem key={pillar.title}>
-              <div className="flex h-full flex-col gap-4 rounded-2xl border border-brand/10 bg-base p-6 shadow-sm transition duration-300 hover:shadow-md hover:border-b-4 hover:border-support">
+              <div className="flex h-full flex-col gap-4 rounded-2xl border border-brand/10 bg-base p-6 shadow-sm transition duration-300 hover:shadow-md hover:border-b-4 hover:border-[#B3E9CF]">
                 <div className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/15 text-accent">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#E4AF26]/15 text-[#E4AF26]">
                     <svg
                       aria-hidden="true"
                       viewBox="0 0 24 24"
@@ -116,15 +123,15 @@ export default function ServicesSection() {
                       />
                     </svg>
                   </span>
-                  <h3 className="text-lg font-semibold text-brand">
+                  <h3 className="text-lg font-semibold text-[#0B5C5B]">
                     {pillar.title}
                   </h3>
                 </div>
-                <p className="text-sm text-brand/70">{pillar.focus}</p>
-                <ul className="grid gap-2 text-sm text-brand/80">
+                <p className="text-sm text-[#0B5C5B]/70">{pillar.focus}</p>
+                <ul className="grid gap-2 text-sm text-[#0B5C5B]/80">
                   {pillar.bullets.map((bullet) => (
                     <li key={bullet} className="flex gap-3">
-                      <span className="mt-1 h-2 w-2 flex-none rounded-full bg-accent" />
+                      <span className="mt-1 h-2 w-2 flex-none rounded-full bg-[#E4AF26]" />
                       <span>{bullet}</span>
                     </li>
                   ))}
