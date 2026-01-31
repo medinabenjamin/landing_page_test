@@ -1,27 +1,37 @@
+import Image from "next/image";
+
 import Reveal from "@/components/motion/Reveal";
 
 const teamMembers = [
   {
     name: "Daniela Roa Concha",
     role: "CEO & Consultora Principal",
+    imageSrc: "/placeholder.svg",
+    imageAlt: "Retrato profesional de Daniela Roa Concha",
     description:
       "Fundadora de PROSIGO. Lidera la visión estratégica, alineando los objetivos directivos con la realidad operativa de las organizaciones para garantizar un crecimiento sostenible y rentabilidad."
   },
   {
     name: "Carlos Garrido Rosas",
     role: "Consultor de Gestión y Administración",
+    imageSrc: "/placeholder.svg",
+    imageAlt: "Retrato profesional de Carlos Garrido Rosas",
     description:
       "Lidera el área de Administración Externa (BPO) asegurando el cumplimiento financiero y normativo de los clientes. Además, brinda soporte técnico clave en la planificación estratégica y evaluación de proyectos."
   },
   {
     name: "Marcela Salvo Muñoz",
     role: "Analista de Procesos y Estandarización",
+    imageSrc: "/placeholder.svg",
+    imageAlt: "Retrato profesional de Marcela Salvo Muñoz",
     description:
       "Especialista en arquitectura de procesos. Se encarga del levantamiento, documentación y optimización de flujos de trabajo para asegurar la calidad, el orden y la continuidad operativa."
   },
   {
     name: "Benjamín Medina",
     role: "Analista de Automatización",
+    imageSrc: "/placeholder.svg",
+    imageAlt: "Retrato profesional de Benjamín Medina",
     description:
       "Encargado de la transformación digital de las operaciones. Implementa soluciones tecnológicas y automatizaciones para reducir tareas manuales, minimizar errores y agilizar la toma de decisiones."
   }
@@ -52,18 +62,21 @@ export default function TeamSection() {
           </p>
         </Reveal>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {teamMembers.map((member, index) => (
             <Reveal key={member.name} sectionId="equipo">
               <article className="flex h-full flex-col gap-5 rounded-2xl border border-black/5 bg-[#FAFAFA] p-6 shadow-sm">
                 <div className="flex items-center gap-4">
                   <div
-                    className={`flex h-16 w-16 items-center justify-center rounded-full ${avatarBackgrounds[index]} text-[#0B5C5B] shadow-sm`}
-                    aria-hidden="true"
+                    className={`relative flex h-16 w-16 items-center justify-center overflow-hidden rounded-full ${avatarBackgrounds[index]} shadow-sm`}
                   >
-                    <span className="text-lg font-semibold">
-                      {member.name.slice(0, 1)}
-                    </span>
+                    <Image
+                      src={member.imageSrc}
+                      alt={member.imageAlt}
+                      width={64}
+                      height={64}
+                      className="h-full w-full object-cover"
+                    />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-[#0B5C5B]">
