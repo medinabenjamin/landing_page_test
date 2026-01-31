@@ -182,7 +182,7 @@ export default function ServicesSection() {
           </div>
         </div>
 
-        <div className="rounded-3xl bg-brand px-8 py-10 text-[#FAFAFA] shadow-lg">
+        <div className="rounded-3xl bg-[#0B5C5B] px-8 py-10 text-[#FAFAFA] shadow-lg">
           <div className="flex flex-col gap-4">
             <h3 className="text-2xl font-semibold text-[#FAFAFA]">
               Academia PROSIGO &amp; Herramientas Digitales
@@ -190,7 +190,7 @@ export default function ServicesSection() {
             <ul className="grid gap-3 text-sm text-[#FAFAFA]/90">
               {academyBullets.map((bullet) => (
                 <li key={bullet} className="flex gap-3">
-                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-support" />
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-[#B3E9CF]" />
                   <span>{bullet}</span>
                 </li>
               ))}
