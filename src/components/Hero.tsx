@@ -49,9 +49,12 @@ export default function Hero() {
           className="max-w-xs rounded-3xl border border-brand/10 bg-brand p-6 text-base shadow-lg"
           sectionId="hero"
         >
-          <p className="text-base font-semibold text-white">
+          <a
+            href="#servicios"
+            className="inline-flex w-full items-center justify-center text-base font-semibold text-white transition duration-300 ease-out hover:text-white/90"
+          >
             Conoce nuestros servicios
-          </p>
+          </a>
         </Reveal>
       </div>
     </section>
