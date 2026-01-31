@@ -1,4 +1,3 @@
-import Reveal from "@/components/motion/Reveal";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
 
 export default function Hero() {
@@ -8,17 +7,12 @@ export default function Hero() {
       data-section="hero"
       className="scroll-mt-24 bg-base text-brand"
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-20 md:flex-row md:items-center md:justify-between">
+      <div className="mx-auto flex max-w-4xl flex-col gap-10 px-6 py-20">
         <Stagger
-          className="max-w-xl space-y-6"
+          className="max-w-2xl space-y-6"
           delayChildren={0.05}
           sectionId="hero"
         >
-          <StaggerItem>
-            <p className="text-sm uppercase tracking-[0.3em] text-brand/70">
-              Consultoría estratégica
-            </p>
-          </StaggerItem>
           <StaggerItem>
             <h1 className="text-4xl font-semibold leading-tight text-brand md:text-5xl">
               Gestión Estratégica y Eficiencia Operativa para Empresas y
@@ -45,14 +39,6 @@ export default function Hero() {
             </div>
           </StaggerItem>
         </Stagger>
-        <Reveal
-          className="max-w-xs rounded-3xl border border-brand/10 bg-brand p-6 text-base shadow-lg"
-          sectionId="hero"
-        >
-          <p className="text-base font-semibold text-white">
-            Conoce nuestros servicios
-          </p>
-        </Reveal>
       </div>
     </section>
   );
