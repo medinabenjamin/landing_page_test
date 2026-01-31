@@ -77,17 +77,17 @@ export default function ServicesSection() {
               <h3 className="text-2xl font-semibold text-[#0B5C5B]">
                 Asesoría Express
               </h3>
-              <p className="mt-3 text-base">
+              <p className="mt-3 text-base text-[#0B5C5B]">
                 Sesión intensiva para obtener claridad inmediata, detectar
                 riesgos críticos y definir un plan de acción priorizado sin
                 procesos largos.
               </p>
             </div>
-            <ul className="grid gap-3 text-sm md:text-base">
+            <ul className="grid gap-3 text-sm text-[#0B5C5B] md:text-base">
               {diagnosticItems.map((item) => (
                 <li key={item} className="flex gap-3">
                   <span className="mt-1 h-2 w-2 flex-none rounded-full bg-[#E4AF26]" />
-                  <span>{item}</span>
+                  <span className="text-[#0B5C5B]">{item}</span>
                 </li>
               ))}
             </ul>
