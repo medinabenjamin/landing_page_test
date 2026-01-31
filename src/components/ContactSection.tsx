@@ -46,7 +46,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="fullName"
                   >
-                    Nombre y Apellido *
+                    Nombre y Apellido (Obligatorio)
                   </label>
                   <input
                     id="fullName"
@@ -62,7 +62,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="company"
                   >
-                    Empresa / Organización *
+                    Empresa / Organización (Obligatorio)
                   </label>
                   <input
                     id="company"
@@ -78,7 +78,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="role"
                   >
-                    Cargo
+                    Cargo (Opcional)
                   </label>
                   <input
                     id="role"
@@ -93,7 +93,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="email"
                   >
-                    Correo Corporativo *
+                    Correo Corporativo (Obligatorio)
                   </label>
                   <input
                     id="email"
@@ -109,7 +109,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="phone"
                   >
-                    Teléfono / WhatsApp
+                    Teléfono / WhatsApp (Opcional)
                   </label>
                   <input
                     id="phone"
@@ -124,7 +124,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="challenge"
                   >
-                    ¿Qué desafío necesita resolver?
+                    ¿Qué desafío necesita resolver? (Lista desplegable)
                   </label>
                   <select
                     id="challenge"
@@ -186,16 +186,16 @@ export default function ContactSection() {
                     contacto@prosigo.cl
                   </p>
                   <p>
-                    <span className="font-semibold">WhatsApp Empresas:</span> +56
-                    9 [placeholder]
+                    <span className="font-semibold">WhatsApp Empresas:</span>{" "}
+                    +56 9 [Tu Número]
                   </p>
                   <p>
                     <span className="font-semibold">Ubicación:</span> Cobertura
-                    nacional (Modalidad Híbrida/Remota).
+                    nacional (Modalidad Híbrida/Remota)
                   </p>
                   <p>
                     <span className="font-semibold">Horario:</span> Lunes a
-                    Viernes: 09:00 - 18:00 hrs.
+                    Viernes 09:00 - 18:00 hrs
                   </p>
                 </div>
               </div>
