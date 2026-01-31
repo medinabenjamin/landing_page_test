@@ -60,13 +60,6 @@ export default function Header() {
             </a>
           ))}
         </nav>
-        <a
-          href="#contacto"
-          onClick={(event) => scrollToSection("contacto", event)}
-          className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white shadow-sm transition duration-300 ease-out hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40 focus-visible:ring-offset-2 focus-visible:ring-offset-base"
-        >
-          Contáctanos
-        </a>
       </div>
     </header>
   );
