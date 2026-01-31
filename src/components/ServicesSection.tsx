@@ -4,9 +4,9 @@ import Reveal from "@/components/motion/Reveal";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
 
 const diagnosticItems = [
-  "Sesión Consultiva: Reunión de alto nivel con la gerencia (1 hora) para detección de dolores críticos.",
-  "Análisis de Riesgo y FODA Táctico: Evaluación rápida de las áreas vitales de la empresa.",
-  "Informe Ejecutivo: Entrega de hallazgos y un Plan de Acción priorizado (Corto, Mediano y Largo plazo)."
+  "Sesión Consultiva (1 hora).",
+  "Análisis de Riesgo y FODA Táctico.",
+  "Informe Ejecutivo con plan priorizado."
 ];
 
 const corporatePillars = [
@@ -62,25 +62,24 @@ export default function ServicesSection() {
         </Reveal>
 
         <Reveal
-          className="rounded-3xl border border-accent bg-support/80 p-8 shadow-lg md:p-10"
+          className="rounded-3xl border-2 border-[#0B5C5B] bg-[#B3E9CF]/70 p-8 text-[#0B5C5B] shadow-lg md:p-10"
           sectionId="servicios"
         >
           <div className="flex flex-col gap-6">
             <div>
-              <h3 className="text-2xl font-semibold text-brand">
-                Diagnóstico Estratégico Express (D-360)
+              <h3 className="text-2xl font-semibold text-[#0B5C5B]">
+                Asesoría Express
               </h3>
-              <p className="mt-3 text-base text-brand/80">
-                Claridad total y hoja de ruta en 48 horas. Diseñado para
-                directivos y dueños que necesitan identificar frenos operativos
-                y oportunidades inmediatas sin procesos largos. Actuamos como un
-                ‘médico de cabecera’ para tu organización.
+              <p className="mt-3 text-base">
+                Sesión intensiva para obtener claridad inmediata, detectar
+                riesgos críticos y definir un plan de acción priorizado sin
+                procesos largos.
               </p>
             </div>
-            <ul className="grid gap-3 text-sm text-brand/80 md:text-base">
+            <ul className="grid gap-3 text-sm md:text-base">
               {diagnosticItems.map((item) => (
                 <li key={item} className="flex gap-3">
-                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-accent" />
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-[#E4AF26]" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -88,7 +87,7 @@ export default function ServicesSection() {
             <div>
               <button
                 type="button"
-                className="rounded-full bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-brand shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"
+                className="rounded-full bg-[#E4AF26] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-[#0B5C5B] shadow-md transition hover:-translate-y-0.5 hover:shadow-lg"
               >
                 AGENDAR DIAGNÓSTICO AHORA
               </button>
