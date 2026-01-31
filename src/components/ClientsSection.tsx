@@ -48,7 +48,7 @@ export default function ClientsSection() {
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-20">
         <Reveal className="max-w-3xl" sectionId="clientes">
-          <h2 className="text-3xl font-semibold text-brand md:text-4xl">
+          <h2 className="text-3xl font-semibold text-[#0B5C5B] md:text-4xl">
             Clientes y Proyectos
           </h2>
           <p className="mt-4 text-base text-brand/70">
@@ -63,14 +63,14 @@ export default function ClientsSection() {
         >
           {clients.map((client) => (
             <StaggerItem key={client.name} className="h-full">
-              <div className="flex h-full flex-col gap-4 rounded-2xl border border-brand/10 bg-white p-6 shadow-sm">
+              <div className="flex h-full flex-col gap-4 rounded-2xl border border-brand/10 bg-[#FAFAFA] p-6 shadow-sm">
                 <div className="flex flex-col gap-4">
                   <div className="flex h-16 items-center justify-center rounded-xl border border-dashed border-brand/20 bg-base text-xs font-semibold uppercase tracking-[0.3em] text-brand/60">
                     Logo {client.name}
                   </div>
-                  <span className="h-0.5 w-16 rounded-full bg-accent" />
+                  <span className="h-0.5 w-16 rounded-full bg-[#E4AF26]" />
                 </div>
-                <div className="space-y-2 text-sm text-brand/80">
+                <div className="space-y-3 text-sm leading-relaxed text-brand/80">
                   <p>
                     <span className="font-semibold text-brand">Sector:</span>{" "}
                     {client.sector}
