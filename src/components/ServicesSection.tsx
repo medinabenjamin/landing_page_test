@@ -146,7 +146,7 @@ export default function ServicesSection() {
         <div className="grid items-center gap-8 rounded-3xl border border-brand/10 bg-base p-8 shadow-sm md:grid-cols-[1.1fr_0.9fr] md:p-10">
           <div className="order-last flex flex-col gap-4 md:order-first">
             <h3 className="text-2xl font-semibold text-brand">
-              BPO: Outsourcing Administrativo y Financiero
+              BPO: Outsourcing Administrativo
             </h3>
             <p className="text-base text-brand/70">
               Enfócate en tu negocio, nosotros cuidamos el ‘Back Office’.
