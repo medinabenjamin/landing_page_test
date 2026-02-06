@@ -46,7 +46,7 @@ export default function ClientsSection() {
       data-section="clientes"
       className="scroll-mt-24 bg-base"
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-20">
+      <div className="mx-auto flex max-w-[83rem] flex-col gap-12 px-6 py-20">
         <Reveal className="max-w-3xl" sectionId="clientes">
           <h2 className="text-3xl font-semibold text-[#0B5C5B] md:text-4xl">
             Clientes y Proyectos
