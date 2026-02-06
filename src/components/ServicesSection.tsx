@@ -12,20 +12,22 @@ const diagnosticItems = [
 const corporatePillars = [
   {
     title: "Dirección Corporativa y Control de Gestión",
-    focus: "Dirección Corporativa y Control de Gestión.",
+    focus:
+      "Enfoque: Visión Integral y Estrategia. Transformamos la intuición en decisiones basadas en datos reales de toda la organización y objetivos claros.",
     bullets: [
-      "Planificación Estratégica",
-      "Evaluación de Proyectos",
-      "Diseño de KPIs y Dashboards"
+      "Planificación Estratégica: Definición de los objetivos estratégicos a 1 o 3 años, alineando a todas las áreas de trabajo.",
+      "Evaluación de Proyectos: Estudios de factibilidad técnica y económica para validar nuevas inversiones y minimizar riesgos.",
+      "Diseño de KPIs y Dashboards: Implementación de tableros de control para monitorear el desempeño operativo, comercial y financiero en tiempo real."
     ]
   },
   {
     title: "Excelencia Operacional y Procesos",
-    focus: "Excelencia Operacional y Procesos.",
+    focus:
+      "Enfoque: Eficiencia y Tiempo. Preparamos tu estructura para soportar el crecimiento sin caos operativo.",
     bullets: [
-      "Estandarización de Procesos",
-      "Automatización de Flujos",
-      "Gestión del Cambio"
+      "Estandarización de Procesos: Levantamiento y documentación de procedimientos clave para asegurar calidad y continuidad.",
+      "Automatización de Flujos: Integración de tecnología para reducir tareas manuales repetitivas y liberar talento humano.",
+      "Gestión del Cambio: Acompañamiento para asegurar que los nuevos procesos sean adoptados por el equipo."
     ]
   },
   {
@@ -105,7 +107,7 @@ export default function ServicesSection() {
         <Stagger className="grid gap-6 md:grid-cols-3" sectionId="servicios">
           {corporatePillars.map((pillar) => (
             <StaggerItem key={pillar.title}>
-              <div className="flex h-full flex-col gap-4 rounded-2xl border border-brand/10 bg-base p-6 shadow-sm transition duration-300 hover:shadow-md hover:border-b-4 hover:border-[#B3E9CF]">
+              <div className="flex h-full min-h-[420px] flex-col gap-4 rounded-2xl border border-brand/10 bg-base p-6 shadow-sm transition duration-300 hover:shadow-md hover:border-b-4 hover:border-[#B3E9CF]">
                 <div className="flex items-center gap-3">
                   <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#E4AF26]/15 text-[#E4AF26]">
                     <svg
