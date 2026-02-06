@@ -33,18 +33,18 @@ export default function Header() {
         isScrolled ? "shadow-[0_6px_18px_rgba(15,23,42,0.08)]" : "shadow-none"
       }`}
     >
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex w-full max-w-6xl items-center gap-6 px-6 py-4">
         <div className="flex items-center">
           <Image
             src="/prosigo-logo.svg"
             alt="Prosigo consultora estratégica"
-            width={180}
-            height={64}
-            className="h-12 w-auto rounded-xl"
+            width={234}
+            height={83}
+            className="h-16 w-auto rounded-xl"
             priority
           />
         </div>
-        <nav className="hidden items-center gap-6 text-sm md:flex">
+        <nav className="hidden flex-1 items-center justify-end gap-8 text-sm md:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -60,13 +60,6 @@ export default function Header() {
             </a>
           ))}
         </nav>
-        <a
-          href="#contacto"
-          onClick={(event) => scrollToSection("contacto", event)}
-          className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white shadow-sm transition duration-300 ease-out hover:bg-brand/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40 focus-visible:ring-offset-2 focus-visible:ring-offset-base"
-        >
-          Contáctanos
-        </a>
       </div>
     </header>
   );
