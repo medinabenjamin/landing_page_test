@@ -1,4 +1,3 @@
-import Reveal from "@/components/motion/Reveal";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
 
 export default function Hero() {
@@ -8,7 +7,7 @@ export default function Hero() {
       data-section="hero"
       className="scroll-mt-24 bg-base text-brand"
     >
-      <div className="mx-auto flex max-w-[83rem] flex-col gap-10 px-6 py-20 md:flex-row md:items-center md:justify-between">
+      <div className="mx-auto flex max-w-[83rem] flex-col gap-8 px-6 py-16 md:items-center">
         <Stagger
           className="max-w-xl space-y-6"
           delayChildren={0.05}
@@ -32,30 +31,27 @@ export default function Hero() {
             </p>
           </StaggerItem>
           <StaggerItem>
-            <div className="flex flex-col items-start gap-3">
-              <a
-                href="#contacto"
-                className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-brand shadow-sm transition duration-300 ease-out hover:bg-accent/90"
-              >
-                SOLICITAR DIAGNÓSTICO INICIAL
-              </a>
+            <div className="flex flex-col items-start gap-4">
+              <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+                <a
+                  href="#contacto"
+                  className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-brand shadow-sm transition duration-300 ease-out hover:bg-accent/90"
+                >
+                  SOLICITAR DIAGNÓSTICO INICIAL
+                </a>
+                <a
+                  href="#servicios"
+                  className="rounded-full border border-brand/40 px-6 py-3 text-sm font-semibold text-brand transition duration-300 ease-out hover:border-brand/60 hover:bg-brand/5"
+                >
+                  Conoce nuestros servicios
+                </a>
+              </div>
               <p className="text-sm text-brand/70">
                 Análisis confidencial y contacto a la brevedad.
               </p>
             </div>
           </StaggerItem>
         </Stagger>
-        <Reveal
-          className="max-w-xs rounded-3xl border border-brand/10 bg-brand p-6 text-base shadow-lg"
-          sectionId="hero"
-        >
-          <a
-            href="#servicios"
-            className="inline-flex w-full items-center justify-center text-base font-semibold text-white transition duration-300 ease-out hover:text-white/90"
-          >
-            Conoce nuestros servicios
-          </a>
-        </Reveal>
       </div>
     </section>
   );
