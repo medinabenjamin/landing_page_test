@@ -8,7 +8,7 @@ export default function Hero() {
       data-section="hero"
       className="scroll-mt-24 bg-base text-brand"
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-20 md:flex-row md:items-center md:justify-between">
+      <div className="mx-auto flex max-w-[83rem] flex-col gap-10 px-6 py-20 md:flex-row md:items-center md:justify-between">
         <Stagger
           className="max-w-xl space-y-6"
           delayChildren={0.05}

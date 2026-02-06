@@ -22,7 +22,7 @@ export default function ContactSection() {
       data-section="contacto"
       className="scroll-mt-24 bg-base"
     >
-      <div className="mx-auto max-w-6xl px-6 py-20">
+      <div className="mx-auto max-w-[83rem] px-6 py-20">
         <Reveal className="space-y-10" sectionId="contacto">
           <div className="space-y-3">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
