@@ -56,15 +56,18 @@ export default function ClientsSection() {
         >
           {clients.map((client) => (
             <StaggerItem key={client.name} className="h-full">
-              <div className="flex h-full flex-col gap-4 rounded-2xl border border-brand/10 bg-[#FAFAFA] p-6 shadow-sm">
-                <div className="flex h-16 items-center justify-center rounded-xl border border-dashed border-brand/20 bg-base text-xs font-semibold uppercase tracking-[0.3em] text-brand/60">
-                  Logo {client.name}
+              <article className="mx-auto flex h-full min-h-[28rem] w-[80%] flex-col rounded-2xl border border-brand/10 bg-[#FAFAFA] shadow-sm">
+                <div className="flex h-52 w-full items-center justify-center rounded-t-2xl bg-[#0B5C5B]/90 p-6">
+                  <div className="flex h-24 w-24 items-center justify-center rounded-xl border border-dashed border-white/40 bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-brand/60">
+                    Logo {client.name}
+                  </div>
                 </div>
-                <div className="space-y-2 text-sm leading-relaxed text-brand/80">
+
+                <div className="flex flex-1 flex-col gap-3 p-6 text-sm leading-relaxed text-brand/80">
                   <p className="font-semibold text-brand">{client.name}</p>
                   <p>{client.project}</p>
                 </div>
-              </div>
+              </article>
             </StaggerItem>
           ))}
         </Stagger>
