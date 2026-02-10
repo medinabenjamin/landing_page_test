@@ -190,8 +190,7 @@ export default function ContactSection() {
                     +56 9 [Tu Número]
                   </p>
                   <p>
-                    <span className="font-semibold">Ubicación:</span> Cobertura
-                    nacional (Modalidad Híbrida/Remota)
+                    Cobertura nacional (Modalidad Híbrida/Remota)
                   </p>
                   <p>
                     <span className="font-semibold">Horario:</span> Lunes a
@@ -205,7 +204,7 @@ export default function ContactSection() {
                 </p>
                 <div className="flex flex-wrap gap-4 text-sm font-medium">
                   <a
-                    href="https://www.instagram.com"
+                    href="https://www.instagram.com/danielaroa.consultora?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                     className="transition hover:text-white"
                   >
                     Instagram
