@@ -6,9 +6,13 @@ export default function Hero() {
     <section
       id="hero"
       data-section="hero"
-      className="scroll-mt-24 bg-base text-brand"
+      className="relative scroll-mt-24 overflow-hidden bg-base text-brand"
     >
-      <div className="mx-auto flex max-w-[83rem] flex-col gap-10 px-6 py-20 md:flex-row md:items-center md:justify-between">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[url('/office-clean.svg')] bg-cover bg-center opacity-30"
+      />
+      <div className="relative z-10 mx-auto flex max-w-[83rem] flex-col gap-10 px-6 py-20 md:flex-row md:items-center md:justify-between">
         <Stagger
           className="max-w-xl space-y-6"
           delayChildren={0.05}
