@@ -54,7 +54,7 @@ export default function TeamSection() {
       <div className="mx-auto flex max-w-[83rem] flex-col gap-12 px-6 py-20">
         <Reveal className="max-w-3xl" sectionId="equipo">
           <h2 className="text-3xl font-semibold text-[#0B5C5B] md:text-4xl">
-            Liderazgo y Equipo Multidisciplinario
+            NUESTRO EQUIPO
           </h2>
           <p className="mt-4 text-base text-brand/70">
             Un equipo integrado por especialistas en estrategia, procesos y
@@ -65,19 +65,22 @@ export default function TeamSection() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {teamMembers.map((member, index) => (
             <Reveal key={member.name} sectionId="equipo">
-              <article className="flex h-full flex-col gap-5 rounded-2xl border border-black/5 bg-[#FAFAFA] p-6 shadow-sm">
-                <div className="flex items-center gap-4">
+              <article className="flex h-full min-h-[32rem] flex-col rounded-2xl border border-black/5 bg-[#FAFAFA] shadow-sm">
+                <div className="relative h-64 w-full overflow-hidden rounded-t-2xl">
                   <div
-                    className={`relative flex h-16 w-16 items-center justify-center overflow-hidden rounded-full ${avatarBackgrounds[index]} shadow-sm`}
+                    className={`absolute inset-0 ${avatarBackgrounds[index]}`}
                   >
                     <Image
                       src={member.imageSrc}
                       alt={member.imageAlt}
-                      width={64}
-                      height={64}
-                      className="h-full w-full object-cover"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                      className="object-cover"
                     />
                   </div>
+                </div>
+
+                <div className="flex flex-1 flex-col gap-5 p-6">
                   <div>
                     <h3 className="text-lg font-semibold text-[#0B5C5B]">
                       {member.name}
@@ -86,8 +89,8 @@ export default function TeamSection() {
                       {member.role}
                     </p>
                   </div>
+                  <p className="text-sm text-brand/70">{member.description}</p>
                 </div>
-                <p className="text-sm text-brand/70">{member.description}</p>
               </article>
             </Reveal>
           ))}
