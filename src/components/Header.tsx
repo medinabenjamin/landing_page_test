@@ -35,17 +35,17 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex w-full max-w-[84rem] items-center justify-between gap-12 px-10 py-5">
-        <div className="flex items-center">
+        <div className="flex items-center md:-translate-x-[10%]">
           <Image
             src="/prosigo-logo.svg"
             alt="Prosigo consultora estratégica"
             width={234}
             height={83}
-            className="h-[4.8rem] w-auto"
+            className="h-[4.8rem] w-auto rounded-xl"
             priority
           />
         </div>
-        <nav className="hidden flex-1 items-center justify-end gap-9 text-base font-medium md:flex">
+        <nav className="hidden flex-1 items-center justify-end gap-9 text-base font-medium md:flex md:translate-x-[10%]">
           {navItems.map((item) => (
             <a
               key={item.href}
