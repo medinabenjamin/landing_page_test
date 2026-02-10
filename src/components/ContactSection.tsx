@@ -29,10 +29,10 @@ export default function ContactSection() {
               Contacto
             </p>
             <h2 className="text-3xl font-semibold text-[#0B5C5B] md:text-4xl">
-              Transformemos el desafío en oportunidad
+              Transformamos tus desafíos en oportunidades
             </h2>
             <p className="text-base text-[#0B5C5B]/80">
-              Agenda una conversación inicial
+              Diseñamos soluciones a medida que transforman tus obstáculos actuales en oportunidades y soluciones reales.
             </p>
           </div>
           <div className="grid gap-8 lg:grid-cols-[1.2fr,0.8fr]">
@@ -46,7 +46,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="fullName"
                   >
-                    Nombre y Apellido (Obligatorio)
+                    Nombre y Apellido
                   </label>
                   <input
                     id="fullName"
@@ -62,7 +62,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="company"
                   >
-                    Empresa / Organización (Obligatorio)
+                    Empresa / Organización
                   </label>
                   <input
                     id="company"
@@ -78,7 +78,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="role"
                   >
-                    Cargo (Opcional)
+                    Cargo
                   </label>
                   <input
                     id="role"
@@ -93,7 +93,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="email"
                   >
-                    Correo Corporativo (Obligatorio)
+                    Correo electrónico
                   </label>
                   <input
                     id="email"
@@ -109,7 +109,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="phone"
                   >
-                    Teléfono / WhatsApp (Opcional)
+                    Teléfono / WhatsApp
                   </label>
                   <input
                     id="phone"
@@ -124,7 +124,7 @@ export default function ContactSection() {
                     className="text-sm font-medium text-[#0B5C5B]"
                     htmlFor="challenge"
                   >
-                    ¿Qué desafío necesita resolver? (Lista desplegable)
+                    ¿Qué desafío necesita resolver?
                   </label>
                   <select
                     id="challenge"
