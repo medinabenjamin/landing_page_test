@@ -19,11 +19,6 @@ export default function Hero() {
           sectionId="hero"
         >
           <StaggerItem>
-            <p className="text-sm uppercase tracking-[0.3em] text-brand/70">
-              Consultoría estratégica
-            </p>
-          </StaggerItem>
-          <StaggerItem>
             <h1 className="text-4xl font-semibold leading-tight text-brand md:text-5xl">
               Gestión Estratégica y Eficiencia Operativa para Empresas y
               Organizaciones.
