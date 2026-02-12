@@ -4,16 +4,33 @@ import Reveal from "@/components/motion/Reveal";
 import { type FormEvent, useState } from "react";
 
 export default function ContactSection() {
-  const [submitState, setSubmitState] = useState<"idle" | "sent">("idle");
+  const [submitState, setSubmitState] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const payload = Object.fromEntries(formData.entries());
-    // eslint-disable-next-line no-console
-    console.log("Contacto enviado", payload);
-    setSubmitState("sent");
-    event.currentTarget.reset();
+
+    try {
+      setSubmitState("sending");
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("No se pudo enviar el formulario");
+      }
+
+      setSubmitState("sent");
+      event.currentTarget.reset();
+    } catch (error) {
+      console.error("Error en el envío del formulario", error);
+      setSubmitState("error");
+    }
   };
 
   return (
@@ -162,9 +179,10 @@ export default function ContactSection() {
               </div>
               <button
                 type="submit"
-                className="w-full rounded-full bg-[#E4AF26] px-5 py-3 text-sm font-semibold text-[#0B5C5B] transition duration-300 ease-out hover:bg-[#E4AF26]/90"
+                disabled={submitState === "sending"}
+                className="w-full rounded-full bg-[#E4AF26] px-5 py-3 text-sm font-semibold text-[#0B5C5B] transition duration-300 ease-out hover:bg-[#E4AF26]/90 disabled:cursor-not-allowed disabled:opacity-70"
               >
-                SOLICITAR CONTACTO
+                {submitState === "sending" ? "ENVIANDO..." : "SOLICITAR CONTACTO"}
               </button>
               <p className="text-xs text-[#0B5C5B]/70">
                 Sus datos son tratados con confidencialidad.
@@ -172,6 +190,11 @@ export default function ContactSection() {
               {submitState === "sent" && (
                 <p className="text-sm font-medium text-[#0B5C5B]">
                   ¡Gracias! Te contactaremos en breve.
+                </p>
+              )}
+              {submitState === "error" && (
+                <p className="text-sm font-medium text-red-600">
+                  No pudimos enviar tu solicitud. Intenta nuevamente en unos minutos.
                 </p>
               )}
             </form>
