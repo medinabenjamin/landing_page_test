@@ -176,29 +176,57 @@ export default function ContactSection() {
               )}
             </form>
             <div className="flex h-full flex-col justify-between gap-8 rounded-2xl bg-[#0B5C5B] p-6 text-[#FAFAFA] shadow-sm">
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold">
-                  Información de Contacto
+              <div className="flex flex-col gap-8">
+                <h3 className="text-center text-2xl font-semibold text-white md:text-[2.1rem] md:leading-tight">
+                  ¿QUÉ PASA DESPUÉS
+                  <br />
+                  DE CONTACTARNOS?
                 </h3>
-                <div className="space-y-3 text-sm text-[#FAFAFA]/90">
-                  <p>
-                    <span className="font-semibold">Correo:</span>{" "}
-                    danielaroaconsultora@gmail.com
-                  </p>
-                  <p>
-                    <span className="font-semibold">WhatsApp Empresas:</span>{" "}
-                    +569 66583494
-                  </p>
-                  <p>
-                    Cobertura nacional (Modalidad Híbrida/Remota)
-                  </p>
+
+                <div className="relative pl-12">
+                  <div className="absolute left-5 top-2 h-[calc(100%-16px)] w-px bg-white/25" />
+
+                  <div className="space-y-6 text-white/90">
+                    <div className="relative">
+                      <div className="absolute -left-12 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-[#7CC8A6] text-base font-semibold text-white">
+                        1
+                      </div>
+                      <p className="text-xl font-semibold leading-tight text-white">Revisamos tu mensaje</p>
+                      <p className="text-sm text-white/80">Analizamos tus necesidades y objetivos.</p>
+                    </div>
+
+                    <div className="relative">
+                      <div className="absolute -left-12 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-[#7CC8A6] text-base font-semibold text-white">
+                        2
+                      </div>
+                      <p className="text-xl font-semibold leading-tight text-white">Coordinamos una llamada inicial</p>
+                      <p className="text-sm text-white/80">Agendamos una conversación para conocerte mejor.</p>
+                    </div>
+
+                    <div className="relative">
+                      <div className="absolute -left-12 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-[#7CC8A6] text-base font-semibold text-white">
+                        3
+                      </div>
+                      <p className="text-xl font-semibold leading-tight text-white">Analizamos tu situación</p>
+                      <p className="text-sm text-white/80">Evaluamos tus desafíos y oportunidades actuales.</p>
+                    </div>
+
+                    <div className="relative">
+                      <div className="absolute -left-12 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-[#7CC8A6] text-base font-semibold text-white">
+                        4
+                      </div>
+                      <p className="text-xl font-semibold leading-tight text-white">Te proponemos un plan claro</p>
+                      <p className="text-sm text-white/80">Recibes una propuesta detallada y accionable.</p>
+                    </div>
+                  </div>
                 </div>
+
+                <p className="text-xl italic text-white/90">Sin compromiso.</p>
               </div>
-              <div className="space-y-3">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FAFAFA]/80">
-                  Síguenos
-                </p>
-                <div className="flex flex-wrap gap-4 text-sm font-medium">
+
+              <div className="space-y-4 border-t border-white/25 pt-7">
+                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white/90">Síguenos</p>
+                <div className="flex flex-wrap gap-6 text-sm font-medium text-white/90">
                   <a
                     href="https://www.instagram.com/danielaroa.consultora?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                     className="transition hover:text-white"
