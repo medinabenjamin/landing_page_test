@@ -39,3 +39,21 @@ La landing usa **Framer Motion** para micro-interacciones y animaciones al hacer
 
 - `src/components/motion/Reveal.tsx`
 - `src/components/motion/Stagger.tsx`
+
+## Envío de formulario de contacto a Gmail
+El formulario ahora envía un `POST` a `'/api/contact'`, y esa ruta despacha el correo usando SMTP de Gmail.
+
+### Variables de entorno requeridas
+Crear un archivo `.env.local` con:
+
+```bash
+SMTP_USER=tu-cuenta@gmail.com
+SMTP_PASS=tu-app-password-de-gmail
+CONTACT_RECEIVER_EMAIL=destino@gmail.com
+```
+
+- `SMTP_USER`: cuenta Gmail desde la que se envía.
+- `SMTP_PASS`: **App Password** (no tu contraseña normal).
+- `CONTACT_RECEIVER_EMAIL`: correo de destino (si se omite, usa `SMTP_USER`).
+
+> Para Gmail, debes activar 2FA y generar un App Password en tu cuenta de Google.
