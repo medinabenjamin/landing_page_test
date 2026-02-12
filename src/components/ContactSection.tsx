@@ -183,18 +183,14 @@ export default function ContactSection() {
                 <div className="space-y-3 text-sm text-[#FAFAFA]/90">
                   <p>
                     <span className="font-semibold">Correo:</span>{" "}
-                    contacto@prosigo.cl
+                    danielaroaconsultora@gmail.com
                   </p>
                   <p>
                     <span className="font-semibold">WhatsApp Empresas:</span>{" "}
-                    +56 9 [Tu Número]
+                    +569 66583494
                   </p>
                   <p>
                     Cobertura nacional (Modalidad Híbrida/Remota)
-                  </p>
-                  <p>
-                    <span className="font-semibold">Horario:</span> Lunes a
-                    Viernes 09:00 - 18:00 hrs
                   </p>
                 </div>
               </div>
