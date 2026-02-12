@@ -47,11 +47,6 @@ const bpoBullets = [
   "Cumplimiento Normativo"
 ];
 
-const academyBullets = [
-  "Entrenamiento Corporativo: Cursos de gestión y productividad para equipos (Próximamente).",
-  "Herramientas Descargables: Plantillas y matrices de decisión (Próximamente)."
-];
-
 export default function ServicesSection() {
   return (
     <section
@@ -185,19 +180,9 @@ export default function ServicesSection() {
         </div>
 
         <div className="rounded-3xl bg-[#0B5C5B] px-8 py-10 text-[#FAFAFA] shadow-lg">
-          <div className="flex flex-col gap-4">
-            <h3 className="text-2xl font-semibold text-[#FAFAFA]">
-              Academia PROSIGO &amp; Herramientas Digitales
-            </h3>
-            <ul className="grid gap-3 text-sm text-[#FAFAFA]/90">
-              {academyBullets.map((bullet) => (
-                <li key={bullet} className="flex gap-3">
-                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-[#B3E9CF]" />
-                  <span>{bullet}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <h3 className="text-2xl font-semibold text-[#FAFAFA]">
+            RECURSOS Y HERRAMIENTAS DIGITALES
+          </h3>
         </div>
       </div>
     </section>
