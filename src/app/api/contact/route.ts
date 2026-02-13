@@ -74,6 +74,22 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   } catch (error) {
     console.error("Error enviando formulario de contacto", error);
+
+    const errorCode =
+      typeof error === "object" && error !== null && "code" in error && typeof error.code === "string"
+        ? error.code
+        : null;
+
+    if (errorCode && ["ENETUNREACH", "ECONNREFUSED", "ETIMEDOUT", "EHOSTUNREACH"].includes(errorCode)) {
+      return NextResponse.json(
+        {
+          error:
+            "No se pudo conectar con el servidor de correo. Verifica la red del servidor o intenta nuevamente en unos minutos.",
+        },
+        { status: 502 }
+      );
+    }
+
     return NextResponse.json({ error: "No se pudo enviar el formulario." }, { status: 500 });
   }
 }
