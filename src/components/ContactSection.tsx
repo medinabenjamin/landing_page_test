@@ -5,6 +5,7 @@ import { type FormEvent, useState } from "react";
 
 export default function ContactSection() {
   const [submitState, setSubmitState] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -13,6 +14,8 @@ export default function ContactSection() {
 
     try {
       setSubmitState("sending");
+      setSubmitError(null);
+
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -20,16 +23,23 @@ export default function ContactSection() {
         },
         body: JSON.stringify(payload),
       });
+      const data = (await response.json().catch(() => ({}))) as {
+        ok?: boolean;
+        error?: string;
+      };
 
-      if (!response.ok) {
-        throw new Error("No se pudo enviar el formulario");
+      if (response.ok && data.ok === true) {
+        setSubmitState("sent");
+        event.currentTarget.reset();
+        return;
       }
 
-      setSubmitState("sent");
-      event.currentTarget.reset();
+      setSubmitState("error");
+      setSubmitError(data.error ?? "No pudimos enviar tu solicitud. Intenta nuevamente en unos minutos");
     } catch (error) {
       console.error("Error en el envío del formulario", error);
       setSubmitState("error");
+      setSubmitError("No pudimos enviar tu solicitud. Intenta nuevamente en unos minutos");
     }
   };
 
@@ -194,7 +204,7 @@ export default function ContactSection() {
               )}
               {submitState === "error" && (
                 <p className="text-sm font-medium text-red-600">
-                  No pudimos enviar tu solicitud. Intenta nuevamente en unos minutos.
+                  {submitError ?? "No pudimos enviar tu solicitud. Intenta nuevamente en unos minutos"}
                 </p>
               )}
             </form>
