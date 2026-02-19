@@ -75,7 +75,7 @@ function renderHighlightedBullet(bullet: ServiceBullet) {
   return (
     <span>
       <strong className="font-bold text-[#0B5C5B]">{bullet.title}:</strong>{" "}
-      <span>{bullet.description}</span>
+      <span className="text-[#0B5C5B]">{bullet.description}</span>
     </span>
   );
 }
@@ -171,7 +171,7 @@ export default function ServicesSection() {
                   <p className="text-sm leading-relaxed text-[#0B5C5B]/80">
                     {pillar.focus}
                   </p>
-                  <ul className="grid gap-2.5 text-base leading-relaxed text-[#0B5C5B]/85">
+                  <ul className="grid gap-2.5 text-base leading-relaxed text-[#0B5C5B]">
                     {pillar.bullets.map((bullet) => (
                       <li key={bullet.title} className="flex gap-3">
                         <span className="mt-1 h-2 w-2 flex-none rounded-full bg-[#E4AF26]" />
