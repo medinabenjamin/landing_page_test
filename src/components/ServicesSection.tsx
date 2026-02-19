@@ -27,17 +27,17 @@ const corporatePillars: {
       {
         title: "Planificación Estratégica",
         description:
-          "Definición de los objetivos estratégicos a 1 o 3 años, alineando a todas las áreas de trabajo"
+          "Definición de los objetivos estratégicos a 1 o 3 años, alineando a todas las áreas de trabajo."
       },
       {
         title: "Evaluación de Proyectos",
         description:
-          "Estudios de factibilidad técnica y económica para validar nuevas inversiones y minimizar riesgos"
+          "Estudios de factibilidad técnica y económica para validar nuevas inversiones y minimizar riesgos."
       },
       {
         title: "Diseño de KPIs y Dashboards",
         description:
-          "Implementación de tableros de control para monitorear el desempeño operativo, comercial y financiero en tiempo real"
+          "Implementación de tableros de control para monitorear el desempeño operativo, comercial y financiero en tiempo real."
       }
     ]
   },
@@ -49,17 +49,17 @@ const corporatePillars: {
       {
         title: "Estandarización de Procesos",
         description:
-          "Levantamiento y documentación de procedimientos clave para asegurar calidad y continuidad"
+          "Levantamiento y documentación de procedimientos clave para asegurar calidad y continuidad."
       },
       {
         title: "Automatización de Flujos",
         description:
-          "Integración de tecnología para reducir tareas manuales repetitivas y liberar talento humano"
+          "Integración de tecnología para reducir tareas manuales repetitivas y liberar talento humano."
       },
       {
         title: "Gestión del Cambio",
         description:
-          "Acompañamiento para asegurar que los nuevos procesos sean adoptados por el equipo"
+          "Acompañamiento para asegurar que los nuevos procesos sean adoptados por el equipo."
       }
     ]
   }
