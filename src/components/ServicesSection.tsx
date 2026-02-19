@@ -57,9 +57,12 @@ export default function ServicesSection() {
       <div className="mx-auto flex max-w-[83rem] flex-col gap-16 px-6 py-20">
         <Reveal className="max-w-3xl" sectionId="servicios">
           <h2 className="text-3xl font-semibold text-brand md:text-4xl">
-            Soluciones de Consultoría Integral: De la Estrategia a la Acción
+            Servicios
           </h2>
           <p className="mt-4 text-base text-brand/70">
+            Soluciones de Consultoría Integral: De la Estrategia a la Acción.
+          </p>
+          <p className="mt-3 text-base text-brand/70">
             Metodología probada para escalar operaciones, minimizar riesgos y
             garantizar resultados medibles en empresas y organizaciones.
           </p>
