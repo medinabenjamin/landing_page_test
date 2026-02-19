@@ -29,15 +29,6 @@ const corporatePillars = [
       "Automatización de Flujos: Integración de tecnología para reducir tareas manuales repetitivas y liberar talento humano.",
       "Gestión del Cambio: Acompañamiento para asegurar que los nuevos procesos sean adoptados por el equipo."
     ]
-  },
-  {
-    title: "Gestión Financiera y Sostenibilidad",
-    focus: "Gestión Financiera y Sostenibilidad.",
-    bullets: [
-      "Optimización de Costos",
-      "Modelos de Presupuesto",
-      "Cumplimiento Tributario"
-    ]
   }
 ];
 
@@ -102,7 +93,7 @@ export default function ServicesSection() {
           </div>
         </Reveal>
 
-        <Stagger className="grid gap-6 md:grid-cols-3" sectionId="servicios">
+        <Stagger className="grid gap-6 md:grid-cols-2" sectionId="servicios">
           {corporatePillars.map((pillar) => (
             <StaggerItem key={pillar.title}>
               <div className="flex h-full min-h-[420px] flex-col gap-4 rounded-2xl border border-brand/10 bg-base p-6 shadow-sm transition duration-300 hover:shadow-md hover:border-b-4 hover:border-[#B3E9CF]">
