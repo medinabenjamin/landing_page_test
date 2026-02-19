@@ -9,15 +9,36 @@ const diagnosticItems = [
   "Informe Ejecutivo con plan priorizado."
 ];
 
-const corporatePillars = [
+type ServiceBullet = {
+  title: string;
+  description: string;
+};
+
+const corporatePillars: {
+  title: string;
+  focus: string;
+  bullets: ServiceBullet[];
+}[] = [
   {
     title: "Dirección Corporativa y Control de Gestión",
     focus:
       "Enfoque: Visión Integral y Estrategia. Transformamos la intuición en decisiones basadas en datos reales de toda la organización y objetivos claros.",
     bullets: [
-      "Planificación Estratégica: Definición de los objetivos estratégicos a 1 o 3 años, alineando a todas las áreas de trabajo.",
-      "Evaluación de Proyectos: Estudios de factibilidad técnica y económica para validar nuevas inversiones y minimizar riesgos.",
-      "Diseño de KPIs y Dashboards: Implementación de tableros de control para monitorear el desempeño operativo, comercial y financiero en tiempo real."
+      {
+        title: "Planificación Estratégica",
+        description:
+          "Definición de los objetivos estratégicos a 1 o 3 años, alineando a todas las áreas de trabajo."
+      },
+      {
+        title: "Evaluación de Proyectos",
+        description:
+          "Estudios de factibilidad técnica y económica para validar nuevas inversiones y minimizar riesgos."
+      },
+      {
+        title: "Diseño de KPIs y Dashboards",
+        description:
+          "Implementación de tableros de control para monitorear el desempeño operativo, comercial y financiero en tiempo real."
+      }
     ]
   },
   {
@@ -25,9 +46,21 @@ const corporatePillars = [
     focus:
       "Enfoque: Eficiencia y Tiempo. Preparamos tu estructura para soportar el crecimiento sin caos operativo.",
     bullets: [
-      "Estandarización de Procesos: Levantamiento y documentación de procedimientos clave para asegurar calidad y continuidad.",
-      "Automatización de Flujos: Integración de tecnología para reducir tareas manuales repetitivas y liberar talento humano.",
-      "Gestión del Cambio: Acompañamiento para asegurar que los nuevos procesos sean adoptados por el equipo."
+      {
+        title: "Estandarización de Procesos",
+        description:
+          "Levantamiento y documentación de procedimientos clave para asegurar calidad y continuidad."
+      },
+      {
+        title: "Automatización de Flujos",
+        description:
+          "Integración de tecnología para reducir tareas manuales repetitivas y liberar talento humano."
+      },
+      {
+        title: "Gestión del Cambio",
+        description:
+          "Acompañamiento para asegurar que los nuevos procesos sean adoptados por el equipo."
+      }
     ]
   }
 ];
@@ -37,6 +70,15 @@ const bpoBullets = [
   "Gestión de Personas",
   "Cumplimiento Normativo"
 ];
+
+function renderHighlightedBullet(bullet: ServiceBullet) {
+  return (
+    <span>
+      <strong className="font-bold text-[#0B5C5B]">{bullet.title}:</strong>{" "}
+      <span>{bullet.description}</span>
+    </span>
+  );
+}
 
 export default function ServicesSection() {
   return (
@@ -93,44 +135,55 @@ export default function ServicesSection() {
           </div>
         </Reveal>
 
-        <Stagger className="grid gap-6 md:grid-cols-2" sectionId="servicios">
-          {corporatePillars.map((pillar) => (
-            <StaggerItem key={pillar.title}>
-              <div className="flex h-full min-h-[420px] flex-col gap-4 rounded-2xl border border-brand/10 bg-base p-6 shadow-sm transition duration-300 hover:shadow-md hover:border-b-4 hover:border-[#B3E9CF]">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#E4AF26]/15 text-[#E4AF26]">
-                    <svg
-                      aria-hidden="true"
-                      viewBox="0 0 24 24"
-                      className="h-5 w-5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4 12h16M12 4v16"
-                      />
-                    </svg>
-                  </span>
-                  <h3 className="text-lg font-semibold text-[#0B5C5B]">
-                    {pillar.title}
-                  </h3>
+        <div className="rounded-3xl border border-[#B3E9CF]/70 bg-gradient-to-b from-[#F4FFF9] to-[#FFFFFF] p-4 shadow-sm md:p-6">
+          <div className="mb-5 text-center md:mb-6">
+            <p className="text-base font-semibold uppercase tracking-[0.12em] text-[#0B5C5B]/70">
+              Servicios Integrales para la Transformación de Negocios.
+            </p>
+          </div>
+
+          <Stagger className="grid gap-6 md:grid-cols-2" sectionId="servicios">
+            {corporatePillars.map((pillar) => (
+              <StaggerItem key={pillar.title}>
+                <div className="relative flex h-full min-h-[420px] flex-col gap-4 rounded-2xl border-2 border-[#B3E9CF]/80 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                  <span className="absolute left-6 right-6 top-0 h-1 rounded-full bg-gradient-to-r from-[#B3E9CF] via-[#E4AF26] to-[#B3E9CF]" />
+                  <div className="flex items-center gap-3">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#E4AF26]/15 text-[#E4AF26]">
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        className="h-5 w-5"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M4 12h16M12 4v16"
+                        />
+                      </svg>
+                    </span>
+                    <h3 className="text-xl font-bold text-[#0B5C5B] md:text-[1.38rem]">
+                      {pillar.title}
+                    </h3>
+                  </div>
+                  <p className="text-sm leading-relaxed text-[#0B5C5B]/80">
+                    {pillar.focus}
+                  </p>
+                  <ul className="grid gap-2.5 text-base leading-relaxed text-[#0B5C5B]/85">
+                    {pillar.bullets.map((bullet) => (
+                      <li key={bullet.title} className="flex gap-3">
+                        <span className="mt-1 h-2 w-2 flex-none rounded-full bg-[#E4AF26]" />
+                        {renderHighlightedBullet(bullet)}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <p className="text-sm text-[#0B5C5B]/70">{pillar.focus}</p>
-                <ul className="grid gap-2 text-sm text-[#0B5C5B]/80">
-                  {pillar.bullets.map((bullet) => (
-                    <li key={bullet} className="flex gap-3">
-                      <span className="mt-1 h-2 w-2 flex-none rounded-full bg-[#E4AF26]" />
-                      <span>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </StaggerItem>
-          ))}
-        </Stagger>
+              </StaggerItem>
+            ))}
+          </Stagger>
+        </div>
 
         <div className="grid items-center gap-8 rounded-3xl border border-brand/10 bg-base p-8 shadow-sm md:grid-cols-[1.1fr_0.9fr] md:p-10">
           <div className="order-last flex flex-col gap-4 md:order-first">
