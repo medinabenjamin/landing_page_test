@@ -208,18 +208,22 @@ export default function ContactSection() {
                 </p>
               )}
             </form>
-            <div className="flex h-full flex-col justify-between gap-8 rounded-2xl bg-[#0B5C5B] p-6 text-[#FAFAFA] shadow-sm">
-              <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-6 rounded-2xl bg-[#0B5C5B] p-6 text-[#FAFAFA] shadow-sm">
+              <div className="flex flex-col gap-6">
                 <h3 className="text-center text-2xl font-semibold text-white md:text-[2.1rem] md:leading-tight">
                   ¿QUÉ PASA DESPUÉS
                   <br />
                   DE CONTACTARNOS?
                 </h3>
 
+                <p className="text-center text-sm text-white/85">
+                  Este es el proceso que seguimos para ayudarte desde el primer mensaje.
+                </p>
+
                 <div className="relative pl-12">
                   <div className="absolute left-5 top-2 h-[calc(100%-16px)] w-px bg-white/25" />
 
-                  <div className="space-y-6 text-white/90">
+                  <div className="space-y-5 text-white/90">
                     <div className="relative">
                       <div className="absolute -left-12 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-[#7CC8A6] text-base font-semibold text-white">
                         1
@@ -254,7 +258,6 @@ export default function ContactSection() {
                   </div>
                 </div>
 
-                <p className="text-xl italic text-white/90">Sin compromiso.</p>
               </div>
 
               <div className="space-y-4 border-t border-white/25 pt-7">
