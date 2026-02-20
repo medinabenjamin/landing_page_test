@@ -185,21 +185,40 @@ export default function ServicesSection() {
           </Stagger>
         </div>
 
-        <div className="grid items-center gap-8 rounded-3xl border border-brand/10 bg-base p-8 shadow-sm md:grid-cols-[1.1fr_0.9fr] md:p-10">
-          <div className="order-last flex flex-col gap-4 md:order-first">
-            <h3 className="text-2xl font-semibold text-brand">
-              BPO: Outsourcing Administrativo
-            </h3>
-            <p className="text-base text-brand/70">
+        <div className="relative grid items-center gap-8 rounded-3xl border-2 border-[#B3E9CF]/80 bg-white p-8 text-brand shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg md:grid-cols-[1.1fr_0.9fr] md:p-10">
+          <div className="pointer-events-none absolute left-8 right-8 top-0 z-0 h-1 rounded-full bg-gradient-to-r from-[#B3E9CF] via-[#E4AF26] to-[#B3E9CF]" />
+          <div className="relative z-10 order-last flex flex-col gap-4 md:order-first">
+            <div className="flex items-center gap-3">
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#E4AF26]/15 text-[#E4AF26]">
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  className="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 12h16M12 4v16"
+                  />
+                </svg>
+              </span>
+              <h3 className="text-2xl font-bold text-brand">
+                BPO: Outsourcing Administrativo
+              </h3>
+            </div>
+            <p className="text-base text-brand/80">
               Enfócate en tu negocio, nosotros cuidamos el ‘Back Office’.
               Servicio de administración externa profesional para garantizar el
               cumplimiento normativo y el orden contable de tu empresa u
               organización.
             </p>
-            <ul className="grid gap-2 text-sm text-brand/80">
+            <ul className="grid gap-2.5 text-base leading-relaxed text-brand">
               {bpoBullets.map((bullet) => (
                 <li key={bullet} className="flex gap-3">
-                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-accent" />
+                  <span className="mt-1 h-2 w-2 flex-none rounded-full bg-[#E4AF26]" />
                   <span>{bullet}</span>
                 </li>
               ))}
@@ -213,8 +232,8 @@ export default function ServicesSection() {
               </button>
             </div>
           </div>
-          <div className="order-first md:order-last">
-            <div className="overflow-hidden rounded-3xl border border-brand/10 bg-support/40 shadow-md">
+          <div className="relative z-10 order-first md:order-last">
+            <div className="overflow-hidden rounded-3xl border border-[#B3E9CF]/80 bg-support/40 shadow-md">
               <Image
                 src="/office-clean.svg"
                 alt="Oficina moderna y ordenada"
