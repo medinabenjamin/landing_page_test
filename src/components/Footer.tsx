@@ -8,9 +8,9 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-1">
           <a
             className="underline-offset-4 hover:underline"
-            href="mailto:danielaroaconsultora@gmail.com"
+            href="mailto:contacto@prosigoconsulting.cl"
           >
-            danielaroaconsultora@gmail.com
+            contacto@prosigoconsulting.cl
           </a>
           <a className="underline-offset-4 hover:underline" href="tel:+56966583494">
             +569 66583494
