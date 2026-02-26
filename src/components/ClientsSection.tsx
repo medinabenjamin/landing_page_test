@@ -11,7 +11,8 @@ const clients = [
   {
     name: "NutriFam Chile",
     project: "Planificación Estratégica.",
-    logo: "/nutrifam-logo.svg"
+    logo: "/nutrifam-logo.svg",
+    logoContainByHeight: true
   },
   {
     name: "After School Casa Arcoiris",
@@ -67,7 +68,11 @@ export default function ClientsSection() {
                       alt={`Logo ${client.name}`}
                       width={420}
                       height={300}
-                      className="h-full w-full rounded-t-2xl object-contain"
+                      className={`h-full rounded-t-2xl object-contain ${
+                        client.logoContainByHeight
+                          ? "w-auto max-w-full"
+                          : "w-full"
+                      }`}
                     />
                   ) : (
                     <div className="flex h-24 w-24 items-center justify-center rounded-xl border border-dashed border-white/40 bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-brand/60">
