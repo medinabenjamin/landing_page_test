@@ -11,12 +11,12 @@ const clients = [
   {
     name: "NutriFam Chile",
     project: "Planificación Estratégica.",
-    logo: "/nutrifam-logo.svg",
-    logoContainByHeight: true
+    logo: "/nutrifam-logo.svg"
   },
   {
     name: "After School Casa Arcoiris",
-    project: "Planificación Estratégica y Estandarización de Procesos."
+    project: "Planificación Estratégica y Estandarización de Procesos.",
+    logo: "/casa-arcoiris-logo.svg"
   },
   {
     name: "Roperos Chile",
@@ -68,14 +68,10 @@ export default function ClientsSection() {
                       alt={`Logo ${client.name}`}
                       width={420}
                       height={300}
-                      className={`h-full rounded-t-2xl object-contain ${
-                        client.logoContainByHeight
-                          ? "w-auto max-w-full"
-                          : "w-full"
-                      }`}
+                      className="h-full w-full rounded-t-2xl object-contain"
                     />
                   ) : (
-                    <div className="flex h-24 w-24 items-center justify-center rounded-xl border border-dashed border-white/40 bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-brand/60">
+                    <div className="flex h-24 w-24 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
                       Logo {client.name}
                     </div>
                   )}
