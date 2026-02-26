@@ -20,7 +20,8 @@ const clients = [
   },
   {
     name: "Roperos Chile",
-    project: "Planificación Estratégica y Estandarización de Procesos."
+    project: "Planificación Estratégica y Estandarización de Procesos.",
+    logo: "/roperos-chile-logo.svg"
   },
   {
     name: "Centro Médico Fonte Di Vita",
