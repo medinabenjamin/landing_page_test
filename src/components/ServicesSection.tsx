@@ -233,13 +233,13 @@ export default function ServicesSection() {
             </div>
           </div>
           <div className="relative z-10 order-first md:order-last">
-            <div className="overflow-hidden rounded-3xl border border-[#B3E9CF]/80 bg-support/40 shadow-md">
+            <div className="relative aspect-[52/42] w-full overflow-hidden rounded-3xl border border-[#B3E9CF]/80 bg-support/40 shadow-md">
               <Image
-                src="/office-clean.svg"
-                alt="Oficina moderna y ordenada"
-                width={520}
-                height={420}
-                className="h-full w-full object-cover"
+                src="/bpo-team.svg"
+                alt="Equipo de trabajo en reunión administrativa"
+                fill
+                sizes="(min-width: 768px) 40vw, 100vw"
+                className="object-cover"
               />
             </div>
           </div>
