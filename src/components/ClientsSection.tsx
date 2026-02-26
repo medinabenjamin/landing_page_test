@@ -1,10 +1,12 @@
 import Reveal from "@/components/motion/Reveal";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
+import Image from "next/image";
 
 const clients = [
   {
     name: "Constructora Balken",
-    project: "Planificación Estratégica Corporativa."
+    project: "Planificación Estratégica Corporativa.",
+    logo: "/balken-logo.svg"
   },
   {
     name: "NutriFam Chile",
@@ -57,10 +59,20 @@ export default function ClientsSection() {
           {clients.map((client) => (
             <StaggerItem key={client.name} className="h-full">
               <article className="mx-auto flex h-full min-h-[28rem] w-[80%] flex-col rounded-2xl border border-brand/10 bg-[#FAFAFA] shadow-sm">
-                <div className="flex h-52 w-full items-center justify-center rounded-t-2xl bg-[#0B5C5B]/90 p-6">
-                  <div className="flex h-24 w-24 items-center justify-center rounded-xl border border-dashed border-white/40 bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-brand/60">
-                    Logo {client.name}
-                  </div>
+                <div className="flex h-52 w-full items-center justify-center rounded-t-2xl bg-[#0B5C5B]/90 p-0">
+                  {client.logo ? (
+                    <Image
+                      src={client.logo}
+                      alt={`Logo ${client.name}`}
+                      width={420}
+                      height={300}
+                      className="h-full w-full rounded-t-2xl object-contain"
+                    />
+                  ) : (
+                    <div className="flex h-24 w-24 items-center justify-center rounded-xl border border-dashed border-white/40 bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-brand/60">
+                      Logo {client.name}
+                    </div>
+                  )}
                 </div>
 
                 <div className="flex flex-1 flex-col gap-3 p-6 text-sm leading-relaxed text-brand/80">
