@@ -1,9 +1,29 @@
 <svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="700" fill="#8B8CC9"/>
-  <path d="M470 320L780 200L1090 320" stroke="#F2F2F2" stroke-width="18" stroke-linecap="square"/>
-  <text x="120" y="405" fill="#F2F2F2" font-family="Georgia, 'Times New Roman', serif" font-size="165" font-style="italic">N</text>
-  <text x="330" y="440" fill="#F2F2F2" font-family="Georgia, 'Times New Roman', serif" font-size="170" font-weight="600">utrifam</text>
-  <ellipse cx="700" cy="300" rx="18" ry="30" fill="#9CCB8F" transform="rotate(-28 700 300)"/>
-  <ellipse cx="730" cy="298" rx="18" ry="30" fill="#8DBE80" transform="rotate(28 730 298)"/>
-  <text x="520" y="505" fill="#F2F2F2" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700">Administración alimentaria</text>
+  <rect width="1200" height="700" fill="#8B8CC9" />
+  <path d="M500 318L780 205L1060 318" stroke="#F2F2F2" stroke-width="18" stroke-linecap="square" />
+  <text
+    x="90"
+    y="430"
+    fill="#F2F2F2"
+    font-family="'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, 'Times New Roman', serif"
+    font-size="190"
+    font-style="italic"
+    font-weight="700"
+    letter-spacing="0"
+  >
+    Nutrifam
+  </text>
+  <ellipse cx="705" cy="292" rx="18" ry="30" fill="#9CCB8F" transform="rotate(-28 705 292)" />
+  <ellipse cx="734" cy="292" rx="18" ry="30" fill="#8DBE80" transform="rotate(26 734 292)" />
+  <text
+    x="600"
+    y="525"
+    fill="#F2F2F2"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="66"
+    font-weight="700"
+    text-anchor="middle"
+  >
+    Administración alimentaria
+  </text>
 </svg>
