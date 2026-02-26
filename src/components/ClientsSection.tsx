@@ -10,7 +10,8 @@ const clients = [
   },
   {
     name: "NutriFam Chile",
-    project: "Planificación Estratégica."
+    project: "Planificación Estratégica.",
+    logo: "/nutrifam-logo.svg"
   },
   {
     name: "After School Casa Arcoiris",
