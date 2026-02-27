@@ -25,7 +25,8 @@ const clients = [
   },
   {
     name: "Centro Médico Fonte Di Vita",
-    project: "Outsourcing Administrativo."
+    project: "Outsourcing Administrativo.",
+    logo: "/fonte-di-vita-logo.svg"
   },
   {
     name: "AURAOM",
