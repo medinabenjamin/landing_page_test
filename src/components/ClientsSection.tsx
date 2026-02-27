@@ -30,7 +30,8 @@ const clients = [
   },
   {
     name: "AURAOM",
-    project: "Asesoría Estratégica Directiva."
+    project: "Asesoría Estratégica Directiva.",
+    logo: "/auraom-logo.svg"
   },
   {
     name: "Vitamin Health Centro Médico",
