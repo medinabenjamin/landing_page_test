@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nexo Estratégico | Consultora de gestión",
+  title: "PROSIGO Consulting",
   description:
     "Consultora estratégica especializada en organización, proyección y control de gestión para empresas en crecimiento."
 };
