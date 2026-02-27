@@ -10,7 +10,11 @@ export default function Hero() {
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[url('/hero-image-final.png')] bg-cover bg-[position:center_28%] opacity-50"
+        className="pointer-events-none absolute inset-0 bg-[url('/hero-image-final.png')] bg-no-repeat bg-[length:210%] bg-[position:64%_24%] opacity-50 sm:bg-[length:175%] sm:bg-[position:62%_24%] md:bg-[length:140%] md:bg-[position:66%_30%] lg:bg-cover lg:bg-[position:center_38%]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-base/86 via-base/62 to-base/35"
       />
       <div className="relative z-10 mx-auto flex max-w-[83rem] flex-col gap-10 px-6 py-20 md:flex-row md:items-center md:justify-between">
         <Stagger
