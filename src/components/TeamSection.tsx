@@ -6,7 +6,7 @@ const teamMembers = [
   {
     name: "Daniela Roa Concha",
     role: "CEO & Consultora Principal",
-    imageSrc: "/placeholder.svg",
+    imageSrc: "/daniela-roa-concha.svg",
     imageAlt: "Retrato profesional de Daniela Roa Concha"
   },
   {
