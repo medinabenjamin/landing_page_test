@@ -35,7 +35,8 @@ const clients = [
   },
   {
     name: "Vitamin Health Centro Médico",
-    project: "Planificación Estratégica y Estandarización de Procesos."
+    project: "Planificación Estratégica y Estandarización de Procesos.",
+    logo: "/vitamin-health-logo.svg"
   }
 ];
 
