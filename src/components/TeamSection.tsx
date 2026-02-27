@@ -14,7 +14,7 @@ const teamMembers = [
   {
     name: "Carlos Garrido Rosas",
     role: "Consultor de Gestión y Administración",
-    imageSrc: "/placeholder.svg",
+    imageSrc: "/carlos-garrido-rosas.svg",
     imageAlt: "Retrato profesional de Carlos Garrido Rosas",
     description:
       "Lidera el área de Administración Externa (BPO) asegurando el cumplimiento financiero y normativo de los clientes. Además, brinda soporte técnico clave en la planificación estratégica y evaluación de proyectos."
@@ -26,23 +26,16 @@ const teamMembers = [
     imageAlt: "Retrato profesional de Marcela Salvo Muñoz",
     description:
       "Especialista en arquitectura de procesos. Se encarga del levantamiento, documentación y optimización de flujos de trabajo para asegurar la calidad, el orden y la continuidad operativa."
-  },
-  {
-    name: "Benjamín Medina",
-    role: "Analista de Automatización",
-    imageSrc: "/placeholder.svg",
-    imageAlt: "Retrato profesional de Benjamín Medina",
-    description:
-      "Encargado de la transformación digital de las operaciones. Implementa soluciones tecnológicas y automatizaciones para reducir tareas manuales, minimizar errores y agilizar la toma de decisiones."
   }
 ];
 
 const avatarBackgrounds = [
   "bg-[#0B5C5B]/10",
   "bg-[#E4AF26]/20",
-  "bg-[#0B5C5B]/15",
-  "bg-[#E4AF26]/15"
+  "bg-[#0B5C5B]/15"
 ];
+
+const teamImageClassName = "object-cover object-top";
 
 export default function TeamSection() {
   return (
@@ -51,7 +44,7 @@ export default function TeamSection() {
       data-section="equipo"
       className="scroll-mt-24 bg-base"
     >
-      <div className="mx-auto flex max-w-[83rem] flex-col gap-12 px-6 py-20">
+      <div className="mx-auto flex max-w-[90rem] flex-col gap-12 px-6 py-20">
         <Reveal className="max-w-3xl" sectionId="equipo">
           <h2 className="text-3xl font-semibold text-[#0B5C5B] md:text-4xl">
             NUESTRO EQUIPO
@@ -62,11 +55,11 @@ export default function TeamSection() {
           </p>
         </Reveal>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:gap-8">
           {teamMembers.map((member, index) => (
             <Reveal key={member.name} sectionId="equipo">
-              <article className="flex h-full min-h-[32rem] flex-col rounded-2xl border border-black/5 bg-[#FAFAFA] shadow-sm">
-                <div className="relative h-64 w-full overflow-hidden rounded-t-2xl">
+              <article className="flex h-full min-h-[35rem] flex-col rounded-2xl border border-black/5 bg-[#FAFAFA] shadow-sm">
+                <div className="relative h-80 w-full overflow-hidden rounded-t-2xl lg:h-96">
                   <div
                     className={`absolute inset-0 ${avatarBackgrounds[index]}`}
                   >
@@ -74,8 +67,8 @@ export default function TeamSection() {
                       src={member.imageSrc}
                       alt={member.imageAlt}
                       fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className={teamImageClassName}
                     />
                   </div>
                 </div>
