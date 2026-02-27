@@ -1,0 +1,11 @@
+<svg width="1080" height="720" viewBox="0 0 1080 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Vitamin Health Centro Médico</title>
+  <desc id="desc">Logo con cruz médica y texto Vitamin Health Centro Médico.</desc>
+  <rect width="1080" height="720" rx="48" fill="#0B5C5B"/>
+  <circle cx="300" cy="340" r="138" fill="#ffffff"/>
+  <rect x="278" y="250" width="44" height="180" rx="22" fill="#0B5C5B"/>
+  <rect x="210" y="318" width="180" height="44" rx="22" fill="#0B5C5B"/>
+  <text x="470" y="320" font-size="102" font-family="Inter, Arial, sans-serif" font-weight="700" fill="#ffffff">Vitamin</text>
+  <text x="470" y="420" font-size="88" font-family="Inter, Arial, sans-serif" font-weight="500" fill="#BEE8E4">Health</text>
+  <text x="470" y="490" font-size="40" font-family="Inter, Arial, sans-serif" font-weight="500" fill="#D9F5F2">Centro Médico</text>
+</svg>

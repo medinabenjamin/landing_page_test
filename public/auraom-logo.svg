@@ -1,0 +1,9 @@
+<svg width="1080" height="720" viewBox="0 0 1080 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo AURAOM</title>
+  <desc id="desc">Emblema circular azul con trazo blanco y letra V para AURAOM.</desc>
+  <rect width="1080" height="720" fill="#F3F4F6"/>
+  <circle cx="540" cy="360" r="292" fill="#112B4A"/>
+  <path d="M320 520C228 454 210 317 285 236C345 171 461 154 561 183C649 209 724 267 775 342C816 404 829 480 788 535C746 591 664 614 585 611C478 606 386 568 320 520Z" fill="#112B4A"/>
+  <path d="M329 497C253 435 248 311 318 245C378 188 481 176 571 199C650 220 720 274 767 342C807 400 815 474 778 523C740 574 665 595 592 592C497 588 405 558 329 497Z" fill="none" stroke="#F5F5F4" stroke-width="30" stroke-linecap="round"/>
+  <path d="M430 292L540 514L650 292" stroke="#F5F5F4" stroke-width="18" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

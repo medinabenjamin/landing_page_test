@@ -2,11 +2,18 @@ import Reveal from "@/components/motion/Reveal";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
 import Image from "next/image";
 
+const consistentCardStyles = {
+  logoWrapperClassName:
+    "flex h-52 w-full items-center justify-center rounded-t-2xl bg-[#0B5C5B]/90 p-6",
+  logoClassName: "h-full w-full rounded-t-2xl object-contain"
+};
+
 const clients = [
   {
     name: "Constructora Balken",
     project: "Planificación Estratégica Corporativa.",
-    logo: "/balken-logo.svg"
+    logo: "/balken-logo.svg",
+    ...consistentCardStyles
   },
   {
     name: "NutriFam Chile",
@@ -30,11 +37,15 @@ const clients = [
   },
   {
     name: "AURAOM",
-    project: "Asesoría Estratégica Directiva."
+    project: "Asesoría Estratégica Directiva.",
+    logo: "/auraom-logo.svg",
+    ...consistentCardStyles
   },
   {
     name: "Vitamin Health Centro Médico",
-    project: "Planificación Estratégica y Estandarización de Procesos."
+    project: "Planificación Estratégica y Estandarización de Procesos.",
+    logo: "/vitamin-health-logo.svg",
+    ...consistentCardStyles
   }
 ];
 
@@ -63,14 +74,22 @@ export default function ClientsSection() {
           {clients.map((client) => (
             <StaggerItem key={client.name} className="h-full">
               <article className="mx-auto flex h-full min-h-[28rem] w-[80%] flex-col rounded-2xl border border-brand/10 bg-[#FAFAFA] shadow-sm">
-                <div className="flex h-52 w-full items-center justify-center rounded-t-2xl bg-[#0B5C5B]/90 p-0">
+                <div
+                  className={
+                    client.logoWrapperClassName ??
+                    "flex h-52 w-full items-center justify-center rounded-t-2xl bg-[#0B5C5B]/90 p-0"
+                  }
+                >
                   {client.logo ? (
                     <Image
                       src={client.logo}
                       alt={`Logo ${client.name}`}
                       width={420}
                       height={300}
-                      className="h-full w-full rounded-t-2xl object-contain"
+                      className={
+                        client.logoClassName ??
+                        "h-full w-full rounded-t-2xl object-contain"
+                      }
                     />
                   ) : (
                     <div className="flex h-24 w-24 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
