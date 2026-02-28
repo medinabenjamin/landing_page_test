@@ -76,7 +76,7 @@ export default function ClientsSection() {
     <section
       id="clientes"
       data-section="clientes"
-      className="scroll-mt-24 bg-base"
+      className="scroll-mt-24 bg-[#0B5C5B]/[0.03]"
     >
       <div className="mx-auto flex max-w-[83rem] flex-col gap-12 px-6 py-20">
         <Reveal className="max-w-3xl" sectionId="clientes">
@@ -95,11 +95,12 @@ export default function ClientsSection() {
         >
           {clients.map((client) => (
             <StaggerItem key={client.name} className="h-full">
-              <article className="mx-auto flex h-full min-h-[28rem] w-[80%] flex-col rounded-2xl border border-brand/10 bg-[#FAFAFA] shadow-sm">
+              <article className="mx-auto flex h-full min-h-[28rem] w-[80%] flex-col overflow-hidden rounded-2xl border border-[#0B5C5B]/15 bg-white shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md">
+                <div className="mx-auto h-1 w-[85%] rounded-b bg-[#0B5C5B]" />
                 <ClientLogoHeader logo={client.logo} name={client.name} />
 
-                <div className="flex flex-1 flex-col gap-3 p-6 text-sm leading-relaxed text-brand/80">
-                  <p className="font-semibold text-brand">{client.name}</p>
+                <div className="flex flex-1 flex-col gap-3 p-6 text-sm leading-relaxed text-slate-600">
+                  <p className="font-semibold text-[#0B5C5B]">{client.name}</p>
                   <p>{client.project}</p>
                 </div>
               </article>
