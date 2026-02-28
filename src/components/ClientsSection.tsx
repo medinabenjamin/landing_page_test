@@ -41,16 +41,16 @@ const clients = [
 ];
 
 const CLIENT_LOGO_HEADER_HEIGHT_CLASS = "h-52";
-const CLIENT_LOGO_SIDE_BAR_WIDTH_CLASS = "w-[18px]";
+const CLIENT_LOGO_SIDE_BAR_WIDTH_CLASS = "w-[12px]";
 
 function ClientLogoHeader({ logo, name }: { logo?: string; name: string }) {
   return (
     <div
-      className={`relative flex w-full overflow-hidden rounded-t-2xl ${CLIENT_LOGO_HEADER_HEIGHT_CLASS}`}
+      className={`relative flex w-full overflow-hidden rounded-t-2xl border-b border-[#0B5C5B]/10 ${CLIENT_LOGO_HEADER_HEIGHT_CLASS}`}
     >
       <div className={`${CLIENT_LOGO_SIDE_BAR_WIDTH_CLASS} bg-[#0B5C5B]`} />
 
-      <div className="flex flex-1 items-center justify-center bg-slate-50 p-6">
+      <div className="flex flex-1 items-center justify-center bg-white p-6">
         {logo ? (
           <Image
             src={logo}
@@ -100,6 +100,7 @@ export default function ClientsSection() {
                   mx-auto flex h-full min-h-[28rem] w-full max-w-[22rem] flex-col overflow-hidden
                   rounded-2xl bg-white
                   border border-[#0B5C5B]/15
+                  ring-1 ring-black/5
                   shadow-[0_10px_30px_rgba(0,0,0,0.06)]
                   transition-all duration-200 ease-out
                   hover:-translate-y-1
@@ -108,7 +109,7 @@ export default function ClientsSection() {
               >
                 <ClientLogoHeader logo={client.logo} name={client.name} />
 
-                <div className="flex flex-1 flex-col gap-3 p-6 text-sm leading-relaxed text-slate-600">
+                <div className="flex flex-1 flex-col gap-3 p-7 text-sm leading-relaxed text-slate-600">
                   <p className="font-semibold text-[#0B5C5B]">{client.name}</p>
                   <p>{client.project}</p>
                 </div>
