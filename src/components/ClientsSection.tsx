@@ -7,43 +7,50 @@ const clients = [
     name: "Constructora Balken",
     project: "Planificación Estratégica Corporativa.",
     logo: "/balken-logo.svg",
-    accent: "#0B5C5B"
+    accentFrom: "#0B5C5B",
+    accentTo: "#D4A017"
   },
   {
     name: "NutriFam Chile",
     project: "Planificación Estratégica.",
     logo: "/nutrifam-logo.svg",
-    accent: "#7A6AF3"
+    accentFrom: "#7A6AF3",
+    accentTo: "#B7AEFF"
   },
   {
     name: "After School Casa Arcoiris",
     project: "Planificación Estratégica y Estandarización de Procesos.",
     logo: "/casa-arcoiris-logo.svg",
-    accent: "#8FD0C4"
+    accentFrom: "#8FD0C4",
+    accentTo: "#5CB8A7"
   },
   {
     name: "Roperos Chile",
     project: "Planificación Estratégica y Estandarización de Procesos.",
     logo: "/roperos-chile-logo.svg",
-    accent: "#0B5C5B"
+    accentFrom: "#0B5C5B",
+    accentTo: "#7CC8B5"
   },
   {
     name: "Centro Médico Fonte Di Vita",
     project: "Outsourcing Administrativo.",
     logo: "/fonte-di-vita-logo.svg",
-    accent: "#A7D8CC"
+    accentFrom: "#A7D8CC",
+    accentTo: "#6FBFAE"
   },
   {
     name: "AURAOM",
     project: "Asesoría Estratégica Directiva.",
     logo: "/auraom-logo.svg",
-    accent: "#6E63D8"
+    accentFrom: "#6E63D8",
+    accentTo: "#36C6C6"
   },
   {
     name: "Vitamin Health Centro Médico",
     project: "Planificación Estratégica y Estandarización de Procesos.",
     logo: "/vitamin-health-logo.svg",
-    accent: "#0D4B63"
+    accentFrom: "#0D4B63",
+    accentTo: "#3D9AA0"
   }
 ];
 
@@ -97,7 +104,7 @@ export default function ClientsSection() {
             <StaggerItem key={client.name} className="h-full">
               <article
                 className="
-                  mx-auto flex h-full min-h-[28rem] w-full max-w-[22rem] flex-col overflow-hidden
+                  mx-auto flex h-full min-h-[22rem] w-full max-w-[22rem] flex-col overflow-hidden
                   rounded-2xl bg-white
                   border border-black/10
                   shadow-[0_10px_30px_rgba(0,0,0,0.06)]
@@ -109,15 +116,14 @@ export default function ClientsSection() {
                 <div
                   className="h-1 w-full"
                   style={{
-                    background: client.accent,
-                    opacity: 0.9,
+                    backgroundImage: `linear-gradient(90deg, ${client.accentFrom}, ${client.accentTo})`,
                     borderTopLeftRadius: "1rem",
                     borderTopRightRadius: "1rem"
                   }}
                 />
                 <ClientLogoHeader logo={client.logo} name={client.name} />
 
-                <div className="flex flex-1 flex-col items-center justify-center gap-3 p-8 text-center">
+                <div className="flex flex-col items-center gap-3 px-8 py-6 text-center">
                   <p className="text-lg font-semibold text-[#0B5C5B]">
                     {client.name}
                   </p>
