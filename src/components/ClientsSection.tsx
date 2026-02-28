@@ -47,12 +47,12 @@ const clients = [
   }
 ];
 
-const CLIENT_LOGO_HEADER_HEIGHT_CLASS = "h-44";
+const CLIENT_LOGO_HEADER_HEIGHT_CLASS = "h-40";
 
 function ClientLogoHeader({ logo, name }: { logo?: string; name: string }) {
   return (
     <div
-      className={`flex w-full items-center justify-center rounded-t-2xl border-b border-black/5 bg-[#F4F7F7] p-8 ${CLIENT_LOGO_HEADER_HEIGHT_CLASS}`}
+      className={`flex w-full items-center justify-center rounded-t-2xl border-b border-black/5 bg-[#F4F7F7] p-7 ${CLIENT_LOGO_HEADER_HEIGHT_CLASS}`}
     >
       {logo ? (
         <Image
@@ -76,7 +76,7 @@ export default function ClientsSection() {
     <section
       id="clientes"
       data-section="clientes"
-      className="scroll-mt-24 bg-[#EEF3F3]"
+      className="scroll-mt-24 bg-[#F3F6F6]"
     >
       <div className="mx-auto flex max-w-[83rem] flex-col gap-12 px-6 py-20">
         <Reveal className="max-w-3xl" sectionId="clientes">
@@ -100,15 +100,20 @@ export default function ClientsSection() {
                   mx-auto flex h-full min-h-[28rem] w-full max-w-[22rem] flex-col overflow-hidden
                   rounded-2xl bg-white
                   border border-black/10
-                  shadow-[0_12px_35px_rgba(0,0,0,0.08)]
+                  shadow-[0_10px_30px_rgba(0,0,0,0.06)]
                   transition-all duration-200 ease-out
                   hover:-translate-y-1
-                  hover:shadow-[0_16px_45px_rgba(0,0,0,0.12)]
+                  hover:shadow-[0_14px_40px_rgba(0,0,0,0.10)]
                 "
               >
                 <div
-                  className="mx-auto mt-3 h-1 w-[88%] rounded"
-                  style={{ background: client.accent, opacity: 0.9 }}
+                  className="h-1 w-full"
+                  style={{
+                    background: client.accent,
+                    opacity: 0.9,
+                    borderTopLeftRadius: "1rem",
+                    borderTopRightRadius: "1rem"
+                  }}
                 />
                 <ClientLogoHeader logo={client.logo} name={client.name} />
 
