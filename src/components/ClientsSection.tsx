@@ -40,33 +40,26 @@ const clients = [
   }
 ];
 
-const CLIENT_LOGO_HEADER_HEIGHT_CLASS = "h-52";
-const CLIENT_LOGO_SIDE_BAR_WIDTH_CLASS = "w-[12px]";
+const CLIENT_LOGO_HEADER_HEIGHT_CLASS = "h-44";
 
 function ClientLogoHeader({ logo, name }: { logo?: string; name: string }) {
   return (
     <div
-      className={`relative flex w-full overflow-hidden rounded-t-2xl border-b border-[#0B5C5B]/10 ${CLIENT_LOGO_HEADER_HEIGHT_CLASS}`}
+      className={`flex w-full items-center justify-center rounded-t-2xl bg-[#0B5C5B]/[0.04] p-6 ${CLIENT_LOGO_HEADER_HEIGHT_CLASS}`}
     >
-      <div className={`${CLIENT_LOGO_SIDE_BAR_WIDTH_CLASS} bg-[#0B5C5B]`} />
-
-      <div className="flex flex-1 items-center justify-center bg-white p-6">
-        {logo ? (
-          <Image
-            src={logo}
-            alt={`Logo ${name}`}
-            width={420}
-            height={300}
-            className="max-h-full max-w-full object-contain"
-          />
-        ) : (
-          <div className="flex h-24 w-24 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
-            Logo {name}
-          </div>
-        )}
-      </div>
-
-      <div className={`${CLIENT_LOGO_SIDE_BAR_WIDTH_CLASS} bg-[#0B5C5B]`} />
+      {logo ? (
+        <Image
+          src={logo}
+          alt={`Logo ${name}`}
+          width={420}
+          height={300}
+          className="max-h-full max-w-full object-contain"
+        />
+      ) : (
+        <div className="flex h-24 w-24 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
+          Logo {name}
+        </div>
+      )}
     </div>
   );
 }
