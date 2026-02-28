@@ -76,7 +76,7 @@ export default function ClientsSection() {
     <section
       id="clientes"
       data-section="clientes"
-      className="scroll-mt-24 bg-[#0B5C5B]/[0.03]"
+      className="scroll-mt-24 bg-[#0B5C5B]/[0.06]"
     >
       <div className="mx-auto flex max-w-[83rem] flex-col gap-12 px-6 py-20">
         <Reveal className="max-w-3xl" sectionId="clientes">
@@ -97,7 +97,7 @@ export default function ClientsSection() {
             <StaggerItem key={client.name} className="h-full">
               <article
                 className="
-                  mx-auto flex h-full min-h-[28rem] w-[80%] flex-col overflow-hidden
+                  mx-auto flex h-full min-h-[28rem] w-full max-w-[22rem] flex-col overflow-hidden
                   rounded-2xl bg-white
                   border border-[#0B5C5B]/15
                   shadow-[0_10px_30px_rgba(0,0,0,0.06)]
