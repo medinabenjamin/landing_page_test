@@ -83,7 +83,7 @@ export default function ClientsSection() {
           <h2 className="text-3xl font-semibold text-[#0B5C5B] md:text-4xl">
             Clientes y Proyectos
           </h2>
-          <p className="mt-4 text-base text-brand/70">
+          <p className="mt-4 text-base text-slate-600">
             Experiencia multisectorial: Metodología PROSIGO aplicada en diversas
             industrias.
           </p>
@@ -95,8 +95,18 @@ export default function ClientsSection() {
         >
           {clients.map((client) => (
             <StaggerItem key={client.name} className="h-full">
-              <article className="mx-auto flex h-full min-h-[28rem] w-[80%] flex-col overflow-hidden rounded-2xl border border-[#0B5C5B]/15 bg-white shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md">
-                <div className="mx-auto h-1 w-[85%] rounded-b bg-[#0B5C5B]" />
+              <article
+                className="
+                  mx-auto flex h-full min-h-[28rem] w-[80%] flex-col overflow-hidden
+                  rounded-2xl bg-white
+                  border border-[#0B5C5B]/15
+                  shadow-[0_10px_30px_rgba(0,0,0,0.06)]
+                  transition-all duration-200 ease-out
+                  hover:-translate-y-1
+                  hover:shadow-[0_14px_40px_rgba(0,0,0,0.10)]
+                "
+              >
+                <div className="mx-auto mt-4 h-1 w-[85%] rounded bg-[#0B5C5B]" />
                 <ClientLogoHeader logo={client.logo} name={client.name} />
 
                 <div className="flex flex-1 flex-col gap-3 p-6 text-sm leading-relaxed text-slate-600">
