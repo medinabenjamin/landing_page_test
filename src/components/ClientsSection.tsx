@@ -50,7 +50,7 @@ function ClientLogoHeader({ logo, name }: { logo?: string; name: string }) {
     >
       <div className={`${CLIENT_LOGO_SIDE_BAR_WIDTH_CLASS} bg-[#0B5C5B]`} />
 
-      <div className="flex flex-1 items-center justify-center bg-slate-100 p-6">
+      <div className="flex flex-1 items-center justify-center bg-slate-50 p-6">
         {logo ? (
           <Image
             src={logo}
@@ -90,7 +90,7 @@ export default function ClientsSection() {
         </Reveal>
 
         <Stagger
-          className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
           sectionId="clientes"
         >
           {clients.map((client) => (
@@ -106,7 +106,6 @@ export default function ClientsSection() {
                   hover:shadow-[0_14px_40px_rgba(0,0,0,0.10)]
                 "
               >
-                <div className="mx-auto mt-4 h-1 w-[85%] rounded bg-[#0B5C5B]" />
                 <ClientLogoHeader logo={client.logo} name={client.name} />
 
                 <div className="flex flex-1 flex-col gap-3 p-6 text-sm leading-relaxed text-slate-600">
