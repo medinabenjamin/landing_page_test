@@ -45,7 +45,7 @@ export default function Header() {
             priority
           />
         </div>
-        <nav className="hidden flex-1 items-center justify-end gap-6 text-base font-medium md:flex lg:gap-9 xl:translate-x-[10%]">
+        <nav className="hidden flex-1 items-center justify-end gap-6 text-base font-medium md:flex lg:gap-9 xl:translate-x-[4%]">
           {navItems.map((item) => (
             <a
               key={item.href}
