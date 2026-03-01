@@ -52,7 +52,7 @@ export default function ContactSection() {
       <div className="mx-auto max-w-[83rem] px-6 py-20">
         <Reveal className="space-y-10" sectionId="contacto">
           <div className="space-y-3">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
+            <p className="text-xl font-bold uppercase tracking-[0.2em] text-[#0B5C5B] md:text-2xl">
               Contacto
             </p>
             <h2 className="text-4xl font-bold tracking-tight text-[#0B5C5B] md:text-5xl">
