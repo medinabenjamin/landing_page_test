@@ -42,7 +42,7 @@ export default function Hero() {
               >
                 SOLICITAR DIAGNÓSTICO INICIAL
               </a>
-              <p className="text-base font-semibold text-brand/85">
+              <p className="text-[1.0625rem] font-semibold text-brand/85">
                 Análisis confidencial y contacto a la brevedad.
               </p>
             </div>
