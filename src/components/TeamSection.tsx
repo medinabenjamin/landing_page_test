@@ -34,8 +34,8 @@ export default function TeamSection() {
     >
       <div className="mx-auto flex max-w-[90rem] flex-col gap-12 px-6 py-20">
         <Reveal className="max-w-3xl" sectionId="equipo">
-          <h2 className="text-3xl font-semibold text-[#0B5C5B] md:text-4xl">
-            NUESTRO EQUIPO
+          <h2 className="text-4xl font-bold tracking-tight text-[#0B5C5B] md:text-5xl">
+            Quiénes Somos
           </h2>
           <p className="mt-4 text-base text-brand/70">
             Un equipo integrado por especialistas en estrategia, procesos y

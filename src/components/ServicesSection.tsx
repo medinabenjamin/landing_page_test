@@ -89,7 +89,7 @@ export default function ServicesSection() {
     >
       <div className="mx-auto flex max-w-[83rem] flex-col gap-16 px-6 py-20">
         <Reveal className="max-w-3xl" sectionId="servicios">
-          <h2 className="text-3xl font-semibold text-brand md:text-4xl">
+          <h2 className="text-4xl font-bold tracking-tight text-brand md:text-5xl">
             Servicios
           </h2>
           <p className="mt-4 text-base text-brand/70">
