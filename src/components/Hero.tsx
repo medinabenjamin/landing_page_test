@@ -29,7 +29,7 @@ export default function Hero() {
             </h1>
           </StaggerItem>
           <StaggerItem>
-            <p className="text-lg text-brand/80">
+            <p className="text-xl font-semibold text-brand/90">
               Optimizamos recursos, estandarizamos procesos y fortalecemos la toma
               de decisiones mediante sistemas de control de gestión.
             </p>
@@ -42,7 +42,7 @@ export default function Hero() {
               >
                 SOLICITAR DIAGNÓSTICO INICIAL
               </a>
-              <p className="text-sm text-brand/70">
+              <p className="text-base font-semibold text-brand/85">
                 Análisis confidencial y contacto a la brevedad.
               </p>
             </div>
