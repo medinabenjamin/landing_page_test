@@ -55,7 +55,7 @@ export default function ContactSection() {
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
               Contacto
             </p>
-            <h2 className="text-3xl font-semibold text-[#0B5C5B] md:text-4xl">
+            <h2 className="text-4xl font-bold tracking-tight text-[#0B5C5B] md:text-5xl">
               Transformamos tus desafíos en oportunidades
             </h2>
             <p className="text-base text-[#0B5C5B]/80">
