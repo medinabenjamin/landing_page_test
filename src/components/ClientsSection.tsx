@@ -6,49 +6,49 @@ const clients = [
   {
     name: "Constructora Balken",
     project: "Planificación Estratégica Corporativa.",
-    logo: "/balken-logo.svg",
+    logo: "/Logos/LOGO CONSTRUCTORA BALKEN.jpg",
     accentFrom: "#0B5C5B",
     accentTo: "#D4A017"
   },
   {
     name: "NutriFam Chile",
     project: "Planificación Estratégica.",
-    logo: "/nutrifam-logo.svg",
+    logo: "/Logos/LOGO_NUTRIFAM_BAJADA (1).jpg",
     accentFrom: "#7A6AF3",
     accentTo: "#B7AEFF"
   },
   {
     name: "After School Casa Arcoiris",
     project: "Planificación Estratégica y Estandarización de Procesos.",
-    logo: "/casa-arcoiris-logo.svg",
+    logo: "/Logos/logo Casa Arcoiris.jpeg",
     accentFrom: "#8FD0C4",
     accentTo: "#5CB8A7"
   },
   {
     name: "Roperos Chile",
     project: "Planificación Estratégica y Estandarización de Procesos.",
-    logo: "/roperos-chile-logo.svg",
+    logo: "/Logos/LOGO ROPEROS CHILE .jpeg",
     accentFrom: "#0B5C5B",
     accentTo: "#7CC8B5"
   },
   {
     name: "Centro Médico Fonte Di Vita",
     project: "Outsourcing Administrativo.",
-    logo: "/fonte-di-vita-logo.svg",
+    logo: "/Logos/LOGO FONTE DI VITA.jpeg",
     accentFrom: "#A7D8CC",
     accentTo: "#6FBFAE"
   },
   {
     name: "AURAOM",
     project: "Asesoría Estratégica Directiva.",
-    logo: "/auraom-logo.svg",
+    logo: "/Logos/LOGO AURAOM.jpeg",
     accentFrom: "#6E63D8",
     accentTo: "#36C6C6"
   },
   {
     name: "Vitamin Health Centro Médico",
     project: "Planificación Estratégica y Estandarización de Procesos.",
-    logo: "/vitamin-health-logo.svg",
+    logo: "/Logos/LOGO VITAMIN HEALTH.jpeg",
     accentFrom: "#0D4B63",
     accentTo: "#3D9AA0"
   }
