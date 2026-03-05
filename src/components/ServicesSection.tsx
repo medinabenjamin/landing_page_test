@@ -186,7 +186,7 @@ export default function ServicesSection() {
         </div>
 
         <div className="relative grid items-center gap-8 rounded-3xl border-2 border-[#B3E9CF]/80 bg-white p-8 text-brand shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg md:grid-cols-[1.1fr_0.9fr] md:p-10">
-          <div className="pointer-events-none absolute left-8 right-8 top-0 z-0 h-1 rounded-full bg-gradient-to-r from-[#B3E9CF] via-[#E4AF26] to-[#B3E9CF]" />
+          <div className="pointer-events-none absolute left-8 right-8 top-0 z-0 h-1 rounded-full bg-[#E4AF26]" />
           <div className="relative z-10 order-last flex flex-col gap-4 md:order-first">
             <div className="flex items-center gap-3">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#E4AF26]/15 text-[#E4AF26]">
