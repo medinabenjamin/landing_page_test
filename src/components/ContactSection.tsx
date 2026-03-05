@@ -51,15 +51,12 @@ export default function ContactSection() {
     >
       <div className="mx-auto max-w-[83rem] px-6 py-20">
         <Reveal className="space-y-10" sectionId="contacto">
-          <div className="space-y-3">
-            <p className="text-xl font-bold uppercase tracking-[0.2em] text-[#0B5C5B] md:text-2xl">
-              Contacto
-            </p>
+          <div className="max-w-3xl">
             <h2 className="text-4xl font-bold tracking-tight text-[#0B5C5B] md:text-5xl">
-              Transformamos tus desafíos en oportunidades
+              Contacto
             </h2>
-            <p className="text-base text-[#0B5C5B]/80">
-              Diseñamos soluciones a medida que transforman tus obstáculos actuales en oportunidades y soluciones reales.
+            <p className="mt-4 text-base text-slate-600">
+              Transformamos tus desafíos en oportunidades
             </p>
           </div>
           <div className="grid gap-8 lg:grid-cols-[1.2fr,0.8fr]">
