@@ -146,7 +146,7 @@ export default function ServicesSection() {
             {corporatePillars.map((pillar) => (
               <StaggerItem key={pillar.title}>
                 <div className="relative flex h-full min-h-[420px] flex-col gap-4 rounded-2xl border-2 border-[#B3E9CF]/80 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-                  <span className="absolute left-6 right-6 top-0 h-1 rounded-full bg-gradient-to-r from-[#B3E9CF] via-[#E4AF26] to-[#B3E9CF]" />
+                  <span className="absolute left-6 right-6 top-0 h-1 rounded-full bg-[#E4AF26]" />
                   <div className="flex items-center gap-3">
                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#E4AF26]/15 text-[#E4AF26]">
                       <svg
