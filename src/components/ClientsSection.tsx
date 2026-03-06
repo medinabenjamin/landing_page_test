@@ -54,23 +54,19 @@ const clients = [
   }
 ];
 
-const CLIENT_LOGO_HEADER_HEIGHT_CLASS = "h-24";
-
 function ClientLogoHeader({ logo, name }: { logo?: string; name: string }) {
   return (
-    <div
-      className={`flex w-full items-center justify-center rounded-t-2xl border-b border-black/5 bg-[#F4F7F7] p-3 ${CLIENT_LOGO_HEADER_HEIGHT_CLASS}`}
-    >
+    <div className="mb-4 flex w-full justify-center">
       {logo ? (
         <Image
           src={logo}
           alt={`Logo ${name}`}
           width={420}
           height={300}
-          className="max-h-[52px] max-w-[80%] object-contain"
+          className="h-16 max-h-16 w-auto object-contain"
         />
       ) : (
-        <div className="flex h-24 w-24 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
+        <div className="flex h-16 w-32 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
           Logo {name}
         </div>
       )}
@@ -94,38 +90,31 @@ export default function ClientsSection() {
         </Reveal>
 
         <Stagger
-          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
           sectionId="clientes"
         >
           {clients.map((client) => (
-            <StaggerItem key={client.name} className="h-full">
+            <StaggerItem key={client.name}>
               <article
                 className="
-                  mx-auto flex h-full min-h-[17.5rem] w-full max-w-[22rem] flex-col overflow-hidden
-                  rounded-2xl bg-white
-                  border border-black/10
-                  shadow-[0_10px_30px_rgba(0,0,0,0.06)]
-                  transition-all duration-200 ease-out
-                  hover:-translate-y-1
-                  hover:shadow-[0_14px_40px_rgba(0,0,0,0.10)]
+                  mx-auto w-full max-w-[22rem] overflow-hidden rounded-2xl bg-white
+                  shadow-md transition hover:shadow-lg
                 "
               >
                 <div
-                  className="h-1 w-full"
+                  className="h-1 w-full rounded-t-2xl"
                   style={{
-                    backgroundImage: `linear-gradient(90deg, ${client.accentFrom}, ${client.accentTo})`,
-                    borderTopLeftRadius: "1rem",
-                    borderTopRightRadius: "1rem"
+                    backgroundImage: `linear-gradient(90deg, ${client.accentFrom}, ${client.accentTo})`
                   }}
                 />
-                <ClientLogoHeader logo={client.logo} name={client.name} />
+                <div className="px-6 pt-6 pb-6 text-center">
+                  <ClientLogoHeader logo={client.logo} name={client.name} />
 
-                <div className="flex flex-col items-center gap-2 px-6 py-4 text-center">
-                  <p className="text-base font-semibold text-[#0B5C5B]">
+                  <p className="mb-1 text-lg font-semibold text-slate-800">
                     {client.name}
                   </p>
                   <p
-                    className="max-w-[22ch] text-sm leading-snug text-slate-500"
+                    className="mx-auto max-w-[26ch] text-sm leading-relaxed text-slate-500"
                     style={{
                       display: "-webkit-box",
                       WebkitLineClamp: 2,
