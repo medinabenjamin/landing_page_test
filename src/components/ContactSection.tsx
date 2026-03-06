@@ -55,7 +55,7 @@ export default function ContactSection() {
             <h2 className="text-4xl font-bold tracking-tight text-[#0B5C5B] md:text-5xl">
               Contacto
             </h2>
-            <p className="mt-4 text-base text-slate-600">
+            <p className="mt-4 text-base font-bold text-slate-600">
               Transformamos tus desafíos en oportunidades
             </p>
           </div>
