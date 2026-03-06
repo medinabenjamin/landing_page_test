@@ -54,12 +54,12 @@ const clients = [
   }
 ];
 
-const CLIENT_LOGO_HEADER_HEIGHT_CLASS = "h-36";
+const CLIENT_LOGO_HEADER_HEIGHT_CLASS = "h-24";
 
 function ClientLogoHeader({ logo, name }: { logo?: string; name: string }) {
   return (
     <div
-      className={`flex w-full items-center justify-center rounded-t-2xl border-b border-black/5 bg-[#F4F7F7] p-5 ${CLIENT_LOGO_HEADER_HEIGHT_CLASS}`}
+      className={`flex w-full items-center justify-center rounded-t-2xl border-b border-black/5 bg-[#F4F7F7] p-3 ${CLIENT_LOGO_HEADER_HEIGHT_CLASS}`}
     >
       {logo ? (
         <Image
@@ -67,7 +67,7 @@ function ClientLogoHeader({ logo, name }: { logo?: string; name: string }) {
           alt={`Logo ${name}`}
           width={420}
           height={300}
-          className="max-h-full max-w-full object-contain"
+          className="max-h-[52px] max-w-[80%] object-contain"
         />
       ) : (
         <div className="flex h-24 w-24 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
@@ -101,7 +101,7 @@ export default function ClientsSection() {
             <StaggerItem key={client.name} className="h-full">
               <article
                 className="
-                  mx-auto flex h-full min-h-[19.5rem] w-full max-w-[22rem] flex-col overflow-hidden
+                  mx-auto flex h-full min-h-[17.5rem] w-full max-w-[22rem] flex-col overflow-hidden
                   rounded-2xl bg-white
                   border border-black/10
                   shadow-[0_10px_30px_rgba(0,0,0,0.06)]
@@ -120,7 +120,7 @@ export default function ClientsSection() {
                 />
                 <ClientLogoHeader logo={client.logo} name={client.name} />
 
-                <div className="flex flex-col items-center gap-2 px-8 py-5 text-center">
+                <div className="flex flex-col items-center gap-2 px-6 py-4 text-center">
                   <p className="text-base font-semibold text-[#0B5C5B]">
                     {client.name}
                   </p>
