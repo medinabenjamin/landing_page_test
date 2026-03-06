@@ -95,7 +95,7 @@ export default function ClientsSection() {
           <h2 className="text-4xl font-bold tracking-tight text-[#0B5C5B] md:text-5xl">
             Clientes y Proyectos
           </h2>
-          <p className="mt-4 text-base font-bold text-slate-600">Experiencia multisectorial</p>
+          <p className="mt-4 text-justify text-base font-bold text-slate-600">Experiencia multisectorial</p>
         </Reveal>
 
         <Stagger
@@ -136,7 +136,7 @@ export default function ClientsSection() {
                       {client.name}
                     </p>
                     <p
-                      className="mt-0.5 mx-auto max-w-[26ch] min-h-[2.5rem] text-sm leading-relaxed text-slate-500"
+                      className="mt-0.5 mx-auto max-w-[26ch] min-h-[2.5rem] text-justify text-sm leading-relaxed text-slate-500"
                       style={{
                         display: "-webkit-box",
                         WebkitLineClamp: 2,
