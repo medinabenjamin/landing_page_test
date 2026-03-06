@@ -226,7 +226,7 @@ export default function ContactSection() {
                         1
                       </div>
                       <p className="text-xl font-semibold leading-tight text-white">Revisamos tu mensaje</p>
-                      <p className="text-sm text-white/80">Analizamos tus necesidades y objetivos.</p>
+                      <p className="text-justify text-sm text-white/80">Analizamos tus necesidades y objetivos.</p>
                     </div>
 
                     <div className="relative">
@@ -234,7 +234,7 @@ export default function ContactSection() {
                         2
                       </div>
                       <p className="text-xl font-semibold leading-tight text-white">Coordinamos una llamada inicial</p>
-                      <p className="text-sm text-white/80">Agendamos una conversación para conocerte mejor.</p>
+                      <p className="text-justify text-sm text-white/80">Agendamos una conversación para conocerte mejor.</p>
                     </div>
 
                     <div className="relative">
@@ -242,7 +242,7 @@ export default function ContactSection() {
                         3
                       </div>
                       <p className="text-xl font-semibold leading-tight text-white">Analizamos tu situación</p>
-                      <p className="text-sm text-white/80">Evaluamos tus desafíos y oportunidades actuales.</p>
+                      <p className="text-justify text-sm text-white/80">Evaluamos tus desafíos y oportunidades actuales.</p>
                     </div>
 
                     <div className="relative">
@@ -250,7 +250,7 @@ export default function ContactSection() {
                         4
                       </div>
                       <p className="text-xl font-semibold leading-tight text-white">Te proponemos un plan claro</p>
-                      <p className="text-sm text-white/80">Recibes una propuesta detallada y accionable.</p>
+                      <p className="text-justify text-sm text-white/80">Recibes una propuesta detallada y accionable.</p>
                     </div>
                   </div>
                 </div>
