@@ -110,9 +110,9 @@ export default function ClientsSection() {
                 <div className="flex h-full flex-col px-6 pt-4 pb-6 text-center">
                   <ClientLogoHeader logo={client.logo} name={client.name} />
 
-                  <div className="mt-2 flex h-full flex-col justify-between">
+                  <div className="mt-2 flex h-full flex-col justify-end">
                     <p
-                      className="mx-auto max-w-[26ch] min-h-[3.5rem] text-lg font-semibold leading-snug text-slate-800"
+                      className="mx-auto max-w-[26ch] min-h-[2.5rem] text-lg font-semibold leading-snug text-slate-800"
                       style={{
                         display: "-webkit-box",
                         WebkitLineClamp: 2,
