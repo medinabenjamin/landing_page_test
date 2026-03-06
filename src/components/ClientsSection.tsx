@@ -56,17 +56,17 @@ const clients = [
 
 function ClientLogoHeader({ logo, name }: { logo?: string; name: string }) {
   return (
-    <div className="mb-2 flex min-h-28 w-full items-center justify-center">
+    <div className="flex min-h-36 w-full items-center justify-center">
       {logo ? (
         <Image
           src={logo}
           alt={`Logo ${name}`}
           width={420}
           height={300}
-          className="h-24 max-h-24 w-auto object-contain"
+          className="h-28 max-h-28 w-auto object-contain"
         />
       ) : (
-        <div className="flex h-24 w-40 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
+        <div className="flex h-28 w-44 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
           Logo {name}
         </div>
       )}
@@ -110,20 +110,9 @@ export default function ClientsSection() {
                 <div className="flex h-full flex-col px-6 pt-4 pb-6 text-center">
                   <ClientLogoHeader logo={client.logo} name={client.name} />
 
-                  <div className="mt-auto">
+                  <div className="mt-2 flex h-full flex-col justify-between">
                     <p
-                      className="mx-auto max-w-[26ch] min-h-[2.75rem] text-sm leading-relaxed text-slate-500"
-                      style={{
-                        display: "-webkit-box",
-                        WebkitLineClamp: 2,
-                        WebkitBoxOrient: "vertical",
-                        overflow: "hidden"
-                      }}
-                    >
-                      {client.project}
-                    </p>
-                    <p
-                      className="mt-2 min-h-[3.5rem] text-lg font-semibold leading-snug text-slate-800"
+                      className="mx-auto max-w-[26ch] min-h-[3.5rem] text-lg font-semibold leading-snug text-slate-800"
                       style={{
                         display: "-webkit-box",
                         WebkitLineClamp: 2,
@@ -132,6 +121,17 @@ export default function ClientsSection() {
                       }}
                     >
                       {client.name}
+                    </p>
+                    <p
+                      className="mt-2 mx-auto max-w-[26ch] min-h-[2.75rem] text-sm leading-relaxed text-slate-500"
+                      style={{
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden"
+                      }}
+                    >
+                      {client.project}
                     </p>
                   </div>
                 </div>
