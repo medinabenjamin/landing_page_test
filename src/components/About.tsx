@@ -19,7 +19,7 @@ export default function About() {
           <h2 className="mt-4 text-3xl font-semibold">
             Experiencia para ordenar y proyectar
           </h2>
-          <p className="mt-4 text-base/80">{siteConfig.about}</p>
+          <p className="mt-4 text-base/80 font-bold">{siteConfig.about}</p>
         </div>
       </Reveal>
     </section>

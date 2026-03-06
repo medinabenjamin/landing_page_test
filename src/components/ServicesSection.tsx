@@ -92,10 +92,10 @@ export default function ServicesSection() {
           <h2 className="text-4xl font-bold tracking-tight text-brand md:text-5xl">
             Servicios
           </h2>
-          <p className="mt-4 text-base text-brand/70">
+          <p className="mt-4 text-base font-bold text-brand/70">
             Soluciones de Consultoría Integral: De la Estrategia a la Acción.
           </p>
-          <p className="mt-3 text-base text-brand/70">
+          <p className="mt-3 text-base font-bold text-brand/70">
             Metodología probada para escalar operaciones, minimizar riesgos y
             garantizar resultados medibles en empresas y organizaciones.
           </p>

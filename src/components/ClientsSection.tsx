@@ -86,7 +86,7 @@ export default function ClientsSection() {
           <h2 className="text-4xl font-bold tracking-tight text-[#0B5C5B] md:text-5xl">
             Clientes y Proyectos
           </h2>
-          <p className="mt-4 text-base text-slate-600">Experiencia multisectorial</p>
+          <p className="mt-4 text-base font-bold text-slate-600">Experiencia multisectorial</p>
         </Reveal>
 
         <Stagger
