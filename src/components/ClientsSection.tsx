@@ -54,12 +54,12 @@ const clients = [
   }
 ];
 
-const CLIENT_LOGO_HEADER_HEIGHT_CLASS = "h-40";
+const CLIENT_LOGO_HEADER_HEIGHT_CLASS = "h-36";
 
 function ClientLogoHeader({ logo, name }: { logo?: string; name: string }) {
   return (
     <div
-      className={`flex w-full items-center justify-center rounded-t-2xl border-b border-black/5 bg-[#F4F7F7] p-7 ${CLIENT_LOGO_HEADER_HEIGHT_CLASS}`}
+      className={`flex w-full items-center justify-center rounded-t-2xl border-b border-black/5 bg-[#F4F7F7] p-5 ${CLIENT_LOGO_HEADER_HEIGHT_CLASS}`}
     >
       {logo ? (
         <Image
@@ -101,7 +101,7 @@ export default function ClientsSection() {
             <StaggerItem key={client.name} className="h-full">
               <article
                 className="
-                  mx-auto flex h-full min-h-[22rem] w-full max-w-[22rem] flex-col overflow-hidden
+                  mx-auto flex h-full min-h-[19.5rem] w-full max-w-[22rem] flex-col overflow-hidden
                   rounded-2xl bg-white
                   border border-black/10
                   shadow-[0_10px_30px_rgba(0,0,0,0.06)]
@@ -120,11 +120,19 @@ export default function ClientsSection() {
                 />
                 <ClientLogoHeader logo={client.logo} name={client.name} />
 
-                <div className="flex flex-col items-center gap-3 px-8 py-6 text-center">
-                  <p className="text-lg font-semibold text-[#0B5C5B]">
+                <div className="flex flex-col items-center gap-2 px-8 py-5 text-center">
+                  <p className="text-base font-semibold text-[#0B5C5B]">
                     {client.name}
                   </p>
-                  <p className="max-w-[22ch] text-sm leading-relaxed text-slate-500">
+                  <p
+                    className="max-w-[22ch] text-sm leading-snug text-slate-500"
+                    style={{
+                      display: "-webkit-box",
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden"
+                    }}
+                  >
                     {client.project}
                   </p>
                 </div>
