@@ -28,6 +28,7 @@ const clients = [
     name: "Roperos Chile",
     project: "Planificación Estratégica y Estandarización de Procesos.",
     logo: "/Logos/LOGO ROPEROS CHILE .jpeg",
+    logoClassName: "scale-[1.14]",
     accentFrom: "#0B5C5B",
     accentTo: "#7CC8B5"
   },
@@ -54,19 +55,27 @@ const clients = [
   }
 ];
 
-function ClientLogoHeader({ logo, name }: { logo?: string; name: string }) {
+function ClientLogoHeader({
+  logo,
+  name,
+  logoClassName
+}: {
+  logo?: string;
+  name: string;
+  logoClassName?: string;
+}) {
   return (
-    <div className="flex min-h-36 w-full items-center justify-center">
+    <div className="flex min-h-40 w-full items-center justify-center">
       {logo ? (
         <Image
           src={logo}
           alt={`Logo ${name}`}
           width={420}
           height={300}
-          className="h-28 max-h-28 w-auto object-contain"
+          className={`h-32 max-h-32 w-auto object-contain ${logoClassName ?? ""}`}
         />
       ) : (
-        <div className="flex h-28 w-44 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
+        <div className="flex h-32 w-48 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
           Logo {name}
         </div>
       )}
@@ -107,10 +116,14 @@ export default function ClientsSection() {
                     backgroundImage: `linear-gradient(90deg, ${client.accentFrom}, ${client.accentTo})`
                   }}
                 />
-                <div className="flex h-full flex-col px-6 pt-4 pb-6 text-center">
-                  <ClientLogoHeader logo={client.logo} name={client.name} />
+                <div className="flex h-full flex-col px-6 pt-2 pb-6 text-center">
+                  <ClientLogoHeader
+                    logo={client.logo}
+                    name={client.name}
+                    logoClassName={client.logoClassName}
+                  />
 
-                  <div className="mt-2 flex h-full flex-col justify-end">
+                  <div className="mt-1 flex h-full flex-col justify-end">
                     <p
                       className="mx-auto max-w-[26ch] min-h-[2.5rem] text-lg font-semibold leading-snug text-slate-800"
                       style={{
@@ -123,7 +136,7 @@ export default function ClientsSection() {
                       {client.name}
                     </p>
                     <p
-                      className="mt-2 mx-auto max-w-[26ch] min-h-[2.75rem] text-sm leading-relaxed text-slate-500"
+                      className="mt-1 mx-auto max-w-[26ch] min-h-[2.75rem] text-sm leading-relaxed text-slate-500"
                       style={{
                         display: "-webkit-box",
                         WebkitLineClamp: 2,
