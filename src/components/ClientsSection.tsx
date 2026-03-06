@@ -28,7 +28,7 @@ const clients = [
     name: "Roperos Chile",
     project: "Planificación Estratégica y Estandarización de Procesos.",
     logo: "/Logos/LOGO ROPEROS CHILE .jpeg",
-    logoClassName: "scale-[1.22]",
+    logoClassName: "scale-[1.5]",
     accentFrom: "#0B5C5B",
     accentTo: "#7CC8B5"
   },
@@ -65,14 +65,14 @@ function ClientLogoHeader({
   logoClassName?: string;
 }) {
   return (
-    <div className="flex min-h-40 w-full items-center justify-center px-2">
+    <div className="relative z-0 flex min-h-44 w-full items-center justify-center px-0">
       {logo ? (
         <Image
           src={logo}
           alt={`Logo ${name}`}
           width={420}
           height={300}
-          className={`h-36 max-h-36 w-auto object-contain ${logoClassName ?? ""}`}
+          className={`relative z-0 h-40 max-h-40 w-auto object-contain ${logoClassName ?? ""}`}
         />
       ) : (
         <div className="flex h-32 w-48 items-center justify-center rounded-xl border-2 border-[#0B5C5B] bg-base/95 p-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#0B5C5B]">
@@ -111,21 +111,21 @@ export default function ClientsSection() {
                 "
               >
                 <div
-                  className="h-1 w-full rounded-t-2xl"
+                  className="relative z-20 h-1 w-full rounded-t-2xl"
                   style={{
                     backgroundImage: `linear-gradient(90deg, ${client.accentFrom}, ${client.accentTo})`
                   }}
                 />
-                <div className="flex h-full flex-col pt-2 pb-6 text-center">
+                <div className="flex h-full flex-col pt-1 pb-4 text-center">
                   <ClientLogoHeader
                     logo={client.logo}
                     name={client.name}
                     logoClassName={client.logoClassName}
                   />
 
-                  <div className="mt-1 flex h-full flex-col justify-end px-6">
+                  <div className="relative z-10 mt-0 flex h-full flex-col justify-end px-4">
                     <p
-                      className="mx-auto max-w-[26ch] min-h-[2.5rem] text-lg font-semibold leading-snug text-slate-800"
+                      className="mx-auto max-w-[26ch] min-h-[2.25rem] text-lg font-semibold leading-snug text-slate-800"
                       style={{
                         display: "-webkit-box",
                         WebkitLineClamp: 2,
@@ -136,7 +136,7 @@ export default function ClientsSection() {
                       {client.name}
                     </p>
                     <p
-                      className="mt-1 mx-auto max-w-[26ch] min-h-[2.75rem] text-sm leading-relaxed text-slate-500"
+                      className="mt-0.5 mx-auto max-w-[26ch] min-h-[2.5rem] text-sm leading-relaxed text-slate-500"
                       style={{
                         display: "-webkit-box",
                         WebkitLineClamp: 2,
