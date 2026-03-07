@@ -37,7 +37,7 @@ export default function TeamSection() {
           <h2 className="text-4xl font-bold tracking-tight text-[#0B5C5B] md:text-5xl">
             Quiénes Somos
           </h2>
-          <p className="mt-4 text-justify text-base font-bold text-brand/70">
+          <p className="mt-4 text-left text-base font-bold text-brand/70">
             Un equipo integrado por especialistas en estrategia, procesos y
             tecnología, enfocado en resultados de alto impacto.
           </p>
