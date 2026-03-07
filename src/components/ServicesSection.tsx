@@ -233,7 +233,7 @@ export default function ServicesSection() {
             </div>
           </div>
           <div className="relative z-10 order-first md:order-last">
-            <div className="relative aspect-[52/42] w-full overflow-hidden rounded-3xl border border-[#B3E9CF]/80 bg-support/40 shadow-md">
+            <div className="relative aspect-[3/2] w-full overflow-hidden rounded-3xl border border-[#B3E9CF]/80 bg-support/40 shadow-md">
               <Image
                 src="/Imagen-BPO-hd.png"
                 alt="Equipo de trabajo en reunión administrativa"
