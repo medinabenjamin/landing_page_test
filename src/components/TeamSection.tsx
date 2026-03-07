@@ -18,7 +18,7 @@ const teamMembers = [
   {
     name: "Marcela Salvo Muñoz",
     role: "Analista de Procesos y Estandarización",
-    imageSrc: "/placeholder.svg",
+    imageSrc: "/Marcela-Equipo.png",
     imageAlt: "Retrato profesional de Marcela Salvo Muñoz"
   }
 ];
