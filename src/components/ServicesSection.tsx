@@ -239,7 +239,7 @@ export default function ServicesSection() {
                 alt="Equipo de trabajo en reunión administrativa"
                 fill
                 sizes="(min-width: 768px) 40vw, 100vw"
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
