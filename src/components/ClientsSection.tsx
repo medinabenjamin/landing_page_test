@@ -136,7 +136,7 @@ export default function ClientsSection() {
                       {client.name}
                     </p>
                     <p
-                      className="mt-0.5 mx-auto max-w-[26ch] min-h-[2.5rem] text-left text-sm leading-relaxed text-slate-500"
+                      className="mt-0.5 mx-auto max-w-[26ch] min-h-[2.5rem] text-center text-sm leading-relaxed text-slate-500"
                       style={{
                         display: "-webkit-box",
                         WebkitLineClamp: 2,
