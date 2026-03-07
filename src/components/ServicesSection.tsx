@@ -92,10 +92,10 @@ export default function ServicesSection() {
           <h2 className="text-4xl font-bold tracking-tight text-brand md:text-5xl">
             Servicios
           </h2>
-          <p className="mt-4 text-justify text-base font-bold text-brand/70">
+          <p className="mt-4 text-left text-base font-bold text-brand/70">
             Soluciones de Consultoría Integral: De la Estrategia a la Acción.
           </p>
-          <p className="mt-3 text-justify text-base font-bold text-brand/70">
+          <p className="mt-3 text-left text-base font-bold text-brand/70">
             Metodología probada para escalar operaciones, minimizar riesgos y
             garantizar resultados medibles en empresas y organizaciones.
           </p>
@@ -110,7 +110,7 @@ export default function ServicesSection() {
               <h3 className="text-2xl font-semibold text-brand">
                 Asesoría Express
               </h3>
-              <p className="mt-3 text-justify text-base text-brand">
+              <p className="mt-3 text-left text-base text-brand">
                 Sesión intensiva para obtener claridad inmediata, detectar
                 riesgos críticos y definir un plan de acción priorizado sin
                 procesos largos.
@@ -168,7 +168,7 @@ export default function ServicesSection() {
                       {pillar.title}
                     </h3>
                   </div>
-                  <p className="text-justify text-sm leading-relaxed text-[#0B5C5B]/80">
+                  <p className="text-left text-sm leading-relaxed text-[#0B5C5B]/80">
                     {pillar.focus}
                   </p>
                   <ul className="grid gap-2.5 text-base leading-relaxed text-[#0B5C5B]">
@@ -209,7 +209,7 @@ export default function ServicesSection() {
                 BPO: Outsourcing Administrativo
               </h3>
             </div>
-            <p className="text-justify text-base text-brand/80">
+            <p className="text-left text-base text-brand/80">
               Enfócate en tu negocio, nosotros cuidamos el ‘Back Office’.
               Servicio de administración externa profesional para garantizar el
               cumplimiento normativo y el orden contable de tu empresa u
