@@ -34,8 +34,8 @@ export default function Header() {
         isScrolled ? "shadow-[0_6px_18px_rgba(15,23,42,0.08)]" : "shadow-none"
       }`}
     >
-      <div className="mx-auto flex w-full max-w-[84rem] items-center justify-between gap-6 px-6 py-5 lg:gap-12 lg:px-10">
-        <div className="flex items-center xl:-translate-x-[10%]">
+      <div className="mx-auto flex w-full max-w-[84rem] items-center gap-6 px-6 py-5 lg:gap-12 lg:px-10">
+        <div className="flex items-center">
           <Image
             src="/prosigo-logo.svg"
             alt="Prosigo consultora estratégica"
@@ -45,7 +45,7 @@ export default function Header() {
             priority
           />
         </div>
-        <nav className="hidden flex-1 items-center justify-end gap-6 text-base font-medium md:flex lg:gap-9 xl:translate-x-[4%]">
+        <nav className="hidden flex-1 items-center justify-center gap-6 text-base font-medium md:flex lg:gap-9">
           {navItems.map((item) => (
             <a
               key={item.href}
