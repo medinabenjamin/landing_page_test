@@ -10,7 +10,7 @@ export default function Hero() {
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[url('/hero-image-definitiva.png')] bg-no-repeat bg-[length:180%] bg-[position:60%_24%] opacity-50 sm:bg-[length:150%] sm:bg-[position:58%_28%] md:bg-[length:128%] md:bg-[position:60%_36%] lg:bg-[length:115%] lg:bg-[position:center_44%]"
+        className="pointer-events-none absolute inset-0 bg-[url('/hero-image-definitiva.png')] bg-no-repeat bg-[length:180%] bg-[position:60%_24%] opacity-40 sm:bg-[length:150%] sm:bg-[position:58%_28%] md:bg-[length:128%] md:bg-[position:60%_36%] lg:bg-[length:115%] lg:bg-[position:center_44%]"
       />
       <div
         aria-hidden
