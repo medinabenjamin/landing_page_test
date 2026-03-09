@@ -2,7 +2,15 @@ import Reveal from "@/components/motion/Reveal";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
 import Image from "next/image";
 
-const clients = [
+type Client = {
+  name: string;
+  project: string;
+  logo: string;
+  logoClassName?: string;
+  hoverLogoClassName?: string;
+};
+
+const clients: Client[] = [
   {
     name: "Constructora Balken",
     project: "Planificación Estratégica Corporativa.",
