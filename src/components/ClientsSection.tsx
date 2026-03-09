@@ -55,23 +55,23 @@ export default function ClientsSection() {
         </Reveal>
 
         <Stagger
-          className="grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          className="grid grid-cols-1 gap-x-5 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
           sectionId="clientes"
         >
           {clients.map((client) => (
             <StaggerItem key={client.name} className="h-full">
               <article className="group flex h-full flex-col items-center text-center">
-                <div className="flex h-32 items-center justify-center px-2">
+                <div className="flex h-36 items-center justify-center px-2">
                   <Image
                     src={client.logo}
                     alt={`Logo ${client.name}`}
                     width={360}
                     height={200}
-                    className={`h-28 w-auto max-w-[15rem] object-contain transition duration-300 group-hover:scale-[1.03] ${client.logoClassName ?? ""}`}
+                    className={`h-32 w-auto max-w-[17rem] object-contain transition duration-300 group-hover:scale-[1.03] ${client.logoClassName ?? ""}`}
                   />
                 </div>
 
-                <div className="mt-5">
+                <div className="mt-3">
                   <p className="text-base font-semibold leading-snug text-slate-800">{client.name}</p>
                   <p className="mx-auto mt-1 max-w-[32ch] text-sm leading-relaxed text-slate-500">
                     {client.project}
