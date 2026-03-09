@@ -22,7 +22,8 @@ const clients = [
     name: "Roperos Chile",
     project: "Planificación Estratégica y Estandarización de Procesos.",
     logo: "/Logos/LOGO ROPEROS CHILE .jpeg",
-    logoClassName: "scale-[1.55]"
+    logoClassName: "scale-[1.55]",
+    hoverLogoClassName: "group-hover:scale-[1.55]"
   },
   {
     name: "Centro Médico Fonte Di Vita",
@@ -61,17 +62,17 @@ export default function ClientsSection() {
           {clients.map((client) => (
             <StaggerItem key={client.name} className="h-full">
               <article className="group flex h-full flex-col items-center text-center">
-                <div className="flex h-36 items-center justify-center px-2">
+                <div className="relative z-0 flex h-36 items-center justify-center px-2">
                   <Image
                     src={client.logo}
                     alt={`Logo ${client.name}`}
                     width={360}
                     height={200}
-                    className={`h-32 w-auto max-w-[17rem] object-contain transition duration-300 group-hover:scale-[1.03] ${client.logoClassName ?? ""}`}
+                    className={`h-32 w-auto max-w-[17rem] object-contain transition duration-300 group-hover:scale-[1.03] ${client.logoClassName ?? ""} ${client.hoverLogoClassName ?? ""}`}
                   />
                 </div>
 
-                <div className="mt-3">
+                <div className="relative z-10 mt-3">
                   <p className="text-base font-semibold leading-snug text-slate-800">{client.name}</p>
                   <p className="mx-auto mt-1 max-w-[32ch] text-sm leading-relaxed text-slate-500">
                     {client.project}
