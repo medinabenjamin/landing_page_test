@@ -92,7 +92,7 @@ export default function ServicesSection() {
           <h2 className="text-4xl font-bold tracking-tight text-brand md:text-5xl">
             Servicios
           </h2>
-          <p className="mt-4 text-left text-base font-bold text-brand/70">
+          <p className="mt-4 text-left text-[2.0625rem] font-bold leading-tight text-brand/70 md:text-[2.8125rem]">
             Soluciones de Consultoría Integral: De la Estrategia a la Acción.
           </p>
           <p className="mt-3 text-left text-base font-bold text-brand/70">
@@ -169,7 +169,7 @@ export default function ServicesSection() {
                     </h3>
                   </div>
                   <p className="text-left text-sm leading-relaxed text-[#0B5C5B]/80">
-                    {pillar.focus}
+                    <strong className="font-bold text-[#0B5C5B]">{pillar.focus}</strong>
                   </p>
                   <ul className="grid gap-2.5 text-base leading-relaxed text-[#0B5C5B]">
                     {pillar.bullets.map((bullet) => (
@@ -219,7 +219,7 @@ export default function ServicesSection() {
               {bpoBullets.map((bullet) => (
                 <li key={bullet} className="flex gap-3">
                   <span className="mt-1 h-2 w-2 flex-none rounded-full bg-[#E4AF26]" />
-                  <span>{bullet}</span>
+                  <strong className="font-bold">{bullet}</strong>
                 </li>
               ))}
             </ul>

@@ -7,19 +7,22 @@ const teamMembers = [
     name: "Daniela Roa Concha",
     role: "CEO & Consultora Principal",
     imageSrc: "/daniela-roa-concha.svg",
-    imageAlt: "Retrato profesional de Daniela Roa Concha"
+    imageAlt: "Retrato profesional de Daniela Roa Concha",
+    credentials: "Ingeniera Comercial y Mg. en Planificación y Control de Gestión"
   },
   {
     name: "Carlos Garrido Rosas",
     role: "Consultor de Gestión y Administración",
     imageSrc: "/carlos-garrido-rosas.svg",
-    imageAlt: "Retrato profesional de Carlos Garrido Rosas"
+    imageAlt: "Retrato profesional de Carlos Garrido Rosas",
+    credentials: "Ingeniero Comercial"
   },
   {
     name: "Marcela Salvo Muñoz",
     role: "Analista de Procesos y Estandarización",
     imageSrc: "/Marcela-Equipo.png",
-    imageAlt: "Retrato profesional de Marcela Salvo Muñoz"
+    imageAlt: "Retrato profesional de Marcela Salvo Muñoz",
+    credentials: "Ingeniera Cilvil Industrial Mención Bioprocesos"
   }
 ];
 
@@ -64,6 +67,7 @@ export default function TeamSection() {
                   <p className="mt-1 text-sm font-medium text-brand/70">
                     {member.role}
                   </p>
+                  <p className="mt-1 text-sm text-brand/70">{member.credentials}</p>
                 </div>
               </article>
             </Reveal>

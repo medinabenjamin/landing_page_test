@@ -55,7 +55,7 @@ export default function ContactSection() {
             <h2 className="text-4xl font-bold tracking-tight text-[#0B5C5B] md:text-5xl">
               Contacto
             </h2>
-            <p className="mt-4 text-base font-bold text-slate-600">
+            <p className="mt-4 text-[2.0625rem] font-bold leading-tight text-slate-600 md:text-[2.8125rem]">
               Transformamos tus desafíos en oportunidades
             </p>
           </div>
@@ -191,9 +191,6 @@ export default function ContactSection() {
               >
                 {submitState === "sending" ? "ENVIANDO..." : "SOLICITAR CONTACTO"}
               </button>
-              <p className="text-xs text-[#0B5C5B]/70">
-                Sus datos son tratados con confidencialidad.
-              </p>
               {submitState === "sent" && (
                 <p className="text-sm font-medium text-[#0B5C5B]">
                   ¡Gracias! Te contactaremos en breve.
@@ -261,13 +258,13 @@ export default function ContactSection() {
                 <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white/90">Síguenos</p>
                 <div className="flex flex-wrap gap-6 text-sm font-medium text-white/90">
                   <a
-                    href="https://www.instagram.com/danielaroa.consultora?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    href="https://www.instagram.com/prosigoconsulting?igsh=ZzFtbWdxeDRjMGpu"
                     className="transition hover:text-white"
                   >
                     Instagram
                   </a>
                   <a
-                    href="https://www.linkedin.com"
+                    href="https://www.linkedin.com/company/prosigo-consulting/about/?viewAsMember=true"
                     className="transition hover:text-white"
                   >
                     LinkedIn
