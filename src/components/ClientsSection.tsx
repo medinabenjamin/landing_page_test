@@ -16,12 +16,12 @@ const clients = [
   {
     name: "After School Casa Arcoiris",
     project: "Planificación Estratégica y Estandarización de Procesos.",
-    logo: "/Logos/logo Casa Arcoiris.jpeg"
+    logo: "/logos/LOGO_CASA_ARCOIRIS.svg"
   },
   {
     name: "Roperos Chile",
     project: "Planificación Estratégica y Estandarización de Procesos.",
-    logo: "/Logos/LOGO ROPEROS CHILE .jpeg",
+    logo: "/logos/LOGO_ROPEROS_CHILE.svg",
     logoClassName: "scale-[1.55]",
     hoverLogoClassName: "group-hover:scale-[1.55]"
   },
@@ -33,12 +33,12 @@ const clients = [
   {
     name: "AURAOM",
     project: "Asesoría Estratégica Directiva.",
-    logo: "/Logos/LOGO AURAOM.jpeg"
+    logo: "/logos/LOGO_AURAOM.svg"
   },
   {
     name: "Vitamin Health Centro Médico",
     project: "Planificación Estratégica y Estandarización de Procesos.",
-    logo: "/Logos/LOGO VITAMIN HEALTH.jpeg"
+    logo: "/logos/LOGO_VITAMIN_HEALTH.svg"
   }
 ];
 
