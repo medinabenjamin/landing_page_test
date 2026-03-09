@@ -209,7 +209,7 @@ export default function ServicesSection() {
                 BPO: Outsourcing Administrativo
               </h3>
             </div>
-            <p className="text-left text-base text-brand/80">
+            <p className="text-justify text-base text-brand/80">
               Enfócate en tu negocio, nosotros cuidamos el ‘Back Office’.
               Servicio de administración externa profesional para garantizar el
               cumplimiento normativo y el orden contable de tu empresa u
