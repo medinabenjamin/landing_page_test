@@ -20,7 +20,7 @@ const teamMembers = [
   {
     name: "Marcela Salvo Muñoz",
     role: "Analista de Procesos y Estandarización",
-    imageSrc: "/Marcela-Equipo.png",
+    imageSrc: "/foto_perfil_web.jpg",
     imageAlt: "Retrato profesional de Marcela Salvo Muñoz",
     credentials: "Ingeniera Cilvil Industrial Mención Bioprocesos"
   }
