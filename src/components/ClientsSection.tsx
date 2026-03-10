@@ -12,16 +12,6 @@ type Client = {
 
 const clients: Client[] = [
   {
-    name: "Constructora Balken",
-    project: "Planificación Estratégica Corporativa.",
-    logo: "/Logos/LOGO CONSTRUCTORA BALKEN.jpg"
-  },
-  {
-    name: "NutriFam Chile",
-    project: "Planificación Estratégica.",
-    logo: "/Logos/LOGO_NUTRIFAM_BAJADA (1).jpg"
-  },
-  {
     name: "After School Casa Arcoiris",
     project: "Planificación Estratégica y Estandarización de Procesos.",
     logo: "/Logos/LOGO_CASA_ARCOIRIS.svg"
@@ -30,11 +20,6 @@ const clients: Client[] = [
     name: "Roperos Chile",
     project: "Planificación Estratégica y Estandarización de Procesos.",
     logo: "/Logos/LOGO_ROPEROS_CHILE.svg"
-  },
-  {
-    name: "Centro Médico Fonte Di Vita",
-    project: "Outsourcing Administrativo.",
-    logo: "/Logos/LOGO FONTE DI VITA.jpeg"
   },
   {
     name: "AURAOM",
