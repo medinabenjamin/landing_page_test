@@ -30,6 +30,21 @@ const clients: Client[] = [
     name: "Vitamin Health Centro Médico",
     project: "Planificación Estratégica y Estandarización de Procesos.",
     logo: "/Logos/LOGO_VITAMIN_HEALTH.svg"
+  },
+  {
+    name: "Constructora Balken",
+    project: "Planificación Estratégica y Corporativa.",
+    logo: "/Logos/LOGO CONSTRUCTORA BALKEN.jpg"
+  },
+  {
+    name: "Centro Médico Fonte di Vita",
+    project: "Outsourcing Administrativo.",
+    logo: "/Logos/LOGO FONTE DI VITA.jpeg"
+  },
+  {
+    name: "NutriFam Chile",
+    project: "Planificación Estratégica.",
+    logo: "/Logos/LOGO_NUTRIFAM_BAJADA (1).jpg"
   }
 ];
 
