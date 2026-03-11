@@ -42,7 +42,7 @@ export default function ClientsSection() {
             Clientes y Proyectos
           </h2>
           <p className="mt-4 text-2xl font-semibold leading-tight text-brand md:text-3xl">
-            Red colaborativa con foco estratégico multisectorial.
+            Experiencia Multisectorial.
           </p>
         </Reveal>
 
