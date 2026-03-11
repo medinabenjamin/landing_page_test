@@ -254,26 +254,21 @@ export default function ContactSection() {
 
               </div>
 
-              <div className="space-y-4 border-t border-white/25 pt-7">
+              <div className="space-y-4 border-t border-white/25 pt-7 text-center">
                 <p className="text-sm font-semibold uppercase tracking-[0.28em] text-white/90">Síguenos</p>
-                <div className="flex flex-wrap gap-6 text-sm font-medium text-white/90">
+                <div className="flex flex-wrap items-center justify-center gap-3 text-sm font-medium text-white/90">
                   <a
                     href="https://www.instagram.com/prosigoconsulting?igsh=ZzFtbWdxeDRjMGpu"
                     className="transition hover:text-white"
                   >
                     Instagram
                   </a>
+                  <span aria-hidden="true" className="text-white/70">·</span>
                   <a
                     href="https://www.linkedin.com/company/prosigo-consulting/about/?viewAsMember=true"
                     className="transition hover:text-white"
                   >
                     LinkedIn
-                  </a>
-                  <a
-                    href="#blog"
-                    className="transition hover:text-white"
-                  >
-                    Blog
                   </a>
                 </div>
               </div>
